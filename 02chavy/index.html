@@ -8,8 +8,44 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		.hdWrap{width: 1200px;margin:0 auto;position: relative;
+		        height: 45px;background-color: skyblue;}
+		/*.gnb{width: 800px;height: 50px;
+			 background-color: skyblue;margin:0 auto;}*/
+		.hdWrap>h1{width: 100px;line-height:45px;}
+		.gnb{width: 900px;/*background-color: pink*/;
+		     top:5px;left:150px;position: absolute;}
+		.gnb>ul>li{width: 20%;float:left;}
+		.gnb>ul>li>a{width: 160px;display: block;line-height: 45px;text-align: center;}
+		.gnb>ul>li>a:hover{width: 160px;border-radius: 30px;background-color:#2c2c96;}
+		
+		.subGnb{width: 400px;background-color: yellow;
+		        top:5px;right:0px;position: absolute;}
+		.subGnb>ul>li{width: 50%;float:left;}
+		.subGnb>ul>li>a{width: 100px;display: block;line-height: 45px;text-align: center;}
+		.subGnb>ul>li>a:hover{width: 100px;border-radius: 30px;background-color:#2c2c96;}
+		.subGnb>ul>li>a:last-child{}
+	</style>
 </head>
 <body>
-	
+	<div class="hdWrap clearfix">	
+		<h1><a href="#">chavy</a></h1>
+		<div class="gnb">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">How It Works</a></li>
+				<li><a href="#">Company</a></li>
+				<li><a href="#">Career</a></li>
+			</ul>
+		</div>
+	<div class="subWrap">
+		<div class="subGnb">
+			<ul>
+				<li><a href="#">Sign in</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</div>
+    </div>
 </body>
 </html>
