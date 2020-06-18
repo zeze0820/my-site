@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		.box{width: 100px;height: 10px;background: red;}
+		.box1{width: 100px;height: 10px;background: blue;margin-top: 10px}
+		.visual{}
+		.visual .view{width: 1100px;position: relative;height: 760px;
+		  			  margin:0 auto;}
+		.visual .slider img.img{position: absolute;left:50%;}
+		.visual .visualTxt{position: absolute;top:150px;width: 500px;}
+		.visual .visualTxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		.visual .visualTxt p{margin-bottom: 20px;}
+		.visual .visualTxt a{display: block;width: 300px;height: 80px;
+		                     background-color: #f00;color:white;border-radius: 40px;
+		                     text-align: center;line-height: 60px;}
+	</style>
+	<script>
+		${document}.ready(function(){
+			$(".slider").bxSlider({auto:true});
+		});
+	</script>
+</head>
+<body>
+	<header id="header">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<div class="view">
+					<img src="images/chavy.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod, voluptatum alias. Voluptate voluptates eligendi est culpa rerum, expedita adipisci.
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/chavy.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod, voluptatum alias. Voluptate voluptates eligendi est culpa rerum, expedita adipisci.
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/chavy.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod, voluptatum alias. Voluptate voluptates eligendi est culpa rerum, expedita adipisci.
+						</p>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
