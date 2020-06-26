@@ -7,10 +7,13 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({pager:false});
+			$(".bSlider").bxSlider({controls:false,auto:true});
 		});
 	</script>
 
@@ -25,10 +28,14 @@
 					<li><a href="#">대학원</a></li>
 				</ul>
 				<ul class="header02 clearfix">
-					 <li><a href="#">글자크기</a></li>
-					 <li><a href="#">찾아오시는길</a></li>
-					 <li><a href="#">ENGLISH</a></li>
-					 <li><a href="#">사이트맵</a></li>
+					<li>글자크기</li>
+					<li class="btn_mp clearfix">
+						<a href="#">-</a>
+						<a href="#">+</a>
+					</li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,24 +78,108 @@
 				<li>
 					<div class="visual">
 						<ul class="slider">
-							<div class="view">
-								<img src="images/con01.jpg" alt="" class="img02">
-								<div class="visualTxt">
-								<h1>한국에서 시작하는 새로운 꿈</h1>
-								<a href="#" class="btnA">자세히보기▶</a>
+							<li>
+								<div class="view">
+									<img src="images/con01.jpg" alt="" class="img02">
+									<div class="visualTxt">
+									<h1>한국에서 시작하는 새로운 꿈</h1>
+									<a href="#" class="btnA">자세히보기▶</a>
+									</div>
 								</div>
-							</div>
-							
+							</li>
+							<li>
+								<div class="view">
+									<img src="images/con01.jpg" alt="" class="img02">
+									<div class="visualTxt">
+									<h1>한국에서 시작하는 새로운 꿈</h1>
+									<a href="#" class="btnA">자세히보기▶</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view">
+									<img src="images/con01.jpg" alt="" class="img02">
+									<div class="visualTxt">
+									<h1>한국에서 시작하는 새로운 꿈</h1>
+									<a href="#" class="btnA">자세히보기▶</a>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</li>
-				<li>02</li>
-				<li>03</li>
-				<li>04</li>
-				<li>05</li>
+				<li>
+					<div class="app">
+						<img src="images/con02.jpg" alt="" class="img03">
+						<div class="appTxt">
+						<h1>APP으로<br>스마트 도서관<br>바로이용하자!</h1>
+						<p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p>
+						<a href="#" class="btnB">자세히보기▶</a>
+					</div>
+				</li>
+				<li>
+					<section class="title01">
+						<h1>HOT LINK</h1>
+						<div class="iconWrapOne">
+							<li><a href="#"><img src="images/icon05.png" alt="" class="img04">국제교류<br>센터</a></li>
+							<li><a href="#"><img src="images/icon06.png" alt="" class="img04">원격지원<br>시스템</a></li>
+							<li><a href="#"><img src="images/icon07.png" alt="" class="img04">예산/결산<br>공고</a></li>
+						</div>
+					</section>
+					
+				</li>
+				<li>
+					<div class="notice">
+						<img src="images/con04.jpg" alt="" class="img05">
+						<div class="noticeTxt">
+						<h1>공지사항</h1>
+						<a href="#"><p>· [공지] 한국대학교 웹진...</p></a>
+						<a href="#"><p>· [공지] 우수대학교 선정 수상</p></a>
+						<a href="#"><p>· [공지] 대학입시 설명회</p></a>
+						<a href="#"><p>· [공지] 2020년 1학기 성적...</p></a>
+					</div>
+				</li>
+				<li>
+					<div class="sns">
+						<div class="snsTxt">
+							<h1>SNS NEWS</h1>
+							<img src="images/con05.jpg" alt="">
+							<p>한국 대학교는<br>2020학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
+						</div>
+					</div>
+				</li>
 				<li>06</li>
 				<li>07</li>
-				<li>08</li>
+				<li class="sliderTwo">
+					<div class="bSlider">
+						
+							<div class="bWrap">
+								<img src="images/con08.jpg" alt="">
+								<div class="bTxt">
+									<h1>2020년 신 · 편입생 2차 모집</h1>
+									<p>2020.7.1 ~ 7.10</p>
+									<a href="#" class="btnB">입학사전예약▶</a>
+								</div>
+								<ul class=snsIcon>
+									<li><a href="#"><img src="images/fac.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/twi.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/gog.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/you.jpg" alt=""></a></li>
+								</ul>
+							</div>
+						
+						
+							<div>
+								<img src="images/con08.jpg" alt="">
+								<div class="bTxt">
+									<h1>2020년 신 · 편입생 2차 모집</h1>
+									<p>2020.7.1 ~ 7.10</p>
+									<a href="#" class="btnB">입학사전예약▶</a>
+								</div>
+							</div>
+						
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
