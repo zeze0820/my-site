@@ -74,6 +74,7 @@ header#header{height: 160px;}
 					  padding-bottom: 15px;}
 .notice .noticeTxt p{font-size: 13px;line-height:13px;padding-top: 15px;
 					 color:white;}
+.notice .noticeTxt span{position: absolute;right:-40px;}
 
 .sns{width: 300px;height: 226px;position: relative;}
 .sns .snsTxt{position: absolute;color:#00163b;
