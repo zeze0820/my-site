@@ -7,13 +7,20 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider({pager:false});
 			$(".bSlider").bxSlider({controls:false,auto:true});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:600,
+				innerHeight:337
+			});
 		});
 	</script>
 
@@ -166,7 +173,7 @@
 				<li>
 					<div class="video">
 						<img src="images/con07.jpg" alt="" class="img06">
-						<a href="#"><img src="images/btn00.png" alt="" class="img07"></a>
+						<a href="https://www.youtube.com/embed/j0BzG0JEN6w" class="youtube"><img src="images/btn00.png" alt="" class="img07"></a>
 					</div>
 				</li>
 				<li class="sliderTwo">
