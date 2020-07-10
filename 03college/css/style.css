@@ -8,10 +8,10 @@ header#header{height: 160px;}
 		  background-repeat: repeat,no-repeat;
 		  background-position:center;
 		  background-size:auto,cover;margin-bottom: 30px;}
-#contents .title{width: 1200px;height: 260px;
+#contents .title{width: 1200px;height: 260px;padding:60px 0;color:white;
 				 _background: yellow;margin:auto;position: relative;}
 #contents .title h1{width: 680px;font-size:55px;position: absolute;
-					padding:60px 0;color:white;}
+					}
 .icon{width: 480px;height: 100px;position: absolute;
 	  top:80px;right:0;}
 .icon a{width: 100px;height: 88px;float:left;margin-left:20px;
@@ -29,11 +29,11 @@ header#header{height: 160px;}
 #contents .container>ul>li:nth-child(7){background: orange;}
 #contents .container>ul>li:nth-child(8){background: pink;width: 75%;}
 
-.visual{width: 100%;height: 452px;}
-.visual .view{width: 900px;height: 452px;margin:0 auto;position: relative;}
+.visual{width: 100%;height: 450px;}
+.visual .view{width: 900px;height: 450px;margin:0 auto;position: relative;}
 .visual .slider img.img02{position: absolute;}
-.visual .visualTxt{position: absolute;padding-top:100px;
-				   padding-left:100px;width: 500px;}
+.visual .visualTxt{position: absolute;top:100px;
+				   left:100px;width: 500px;}
 .visual .visualTxt h1{width: 250px;height: 220px;font-size:55px;
 					  margin-bottom:20px;color:#1650b7;}
 .visual .visualTxt a{display: block;width: 165px;height: 36px;background: #192d4e;
@@ -44,7 +44,7 @@ header#header{height: 160px;}
  box-shadow: none;
  border: 0 none;margin-bottom:0;}
 
-.bWrap{width: 900px;height: 226px;margin:0 auto;position: relative}
+.bWrap{width: 900px;height: 225px;margin:0 auto;position: relative}
 .bSlider img{position: absolute;}
 .bTxt{position: absolute;padding:30px;
 	  }
@@ -54,10 +54,10 @@ header#header{height: 160px;}
 		color:white;text-align: center;line-height: 40px;
 		}
 
-.app{width: 300px;height: 452px;}
+.app{width: 300px;height: 450px;position: relative;}
 .app img.img03{position: absolute;}
-.app .appTxt{position: absolute;padding-top:100px;padding-left:50px;
-			 width: 250px;height: 210px;}
+.app .appTxt{position: absolute;top:100px;left:50px;
+			 }
 .app .appTxt h1{font-size:30px;margin-bottom:25px;color:white;
 				}
 .app .appTxt p{font-size:15px;margin-bottom:35px;color:white;}
@@ -66,26 +66,29 @@ header#header{height: 160px;}
 			   color:white;text-align: center;line-height: 40px;
 			   border: 1px solid #fff;}
 
-.notice{width: 300px;height: 224px;}
+.notice{width: 300px;height: 225px;}
 .notice img.img05{position: absolute;}
-.notice .noticeTxt{position: absolute;color:#fff;height: 224px;
+.notice .noticeTxt{position: absolute;color:#fff;height: 225px;width: 300px;
 				   padding:30px 30px;margin:0 auto;}
+.noticeP{width: 240px;padding:20px 0;}
 .notice .noticeTxt h1{font-size: 23px;border-bottom:1px solid #fff;
-					  padding-bottom: 15px;}
-.notice .noticeTxt p{font-size: 13px;line-height:13px;padding-top: 15px;
-					 color:white;}
-.notice .noticeTxt span{position: absolute;right:-40px;}
+					 top:15px;padding-bottom: 10px;}
+.notice .noticeTxt .noticeP p{font-size: 13px;line-height:13px;
+					 color:white;bottom:0;line-height:25px;right:0;}
+.notice .noticeTxt .noticeP span{right:30px;position: absolute;}
 
-.sns{width: 300px;height: 226px;position: relative;}
+.sns{width: 300px;height: 225px;position: relative;}
+	 
 .sns .snsTxt{position: absolute;color:#00163b;
-			 padding-top:30px; padding-left:30px;
+			 top:30px; left:30px;
 			 margin:0 auto;}
 .sns .snsTxt h1{font-size: 23px;margin-bottom: 20px;}
 .sns .snsTxt p{float:right;font-size: 13px;margin-left: 10px;}
-.snsIcon{width: 140px;height: 30px;position: absolute;bottom:20px;right:30px;}
-.snsIcon a{width: 30px;height: 30px;float:right;}
+.snsIcon{width: 140px;height: 30px;position: absolute;bottom:20px;right:25px;}
+.snsIcon a{width: 30px;height: 30px;float:right;
+		   margin-left:3px;}
 
-.tour{width: 300px;height: 224px;position: relative;}
+.tour{width: 300px;height: 225px;position: relative;}
 .tour .tourTxt{width: 300px;position: absolute;color:white;bottom:0;
 			   background-color: rgba(0,0,0,70%);}
 .tour .tourTxt h4{font-size:20px;text-align: center;line-height:50px;}
@@ -105,11 +108,11 @@ header#header{height: 160px;}
 .banner .banner02 .banTxt02{
 	font-size:20px;text-align: center;line-height:50px;background: #fff;}
 
-#footer{height: 164px;}
+#footer{height: 164px;width: 1200px;margin:0 auto;}
 .footerOne{margin-bottom: 10px;}
-.footerTxt01{width: 800px;margin:0 auto;margin-bottom: 20px;}
-ul.footerOne>li:first-child:after{content:"";display: none}
-.footerTxt01 li{float:left;font-size: 10px;
+.footerTxt01{width: 800px;margin-bottom: 20px;}
+.footerOne>li:first-child:after{content:"";display: none}
+.footerTxt01 li{float:left;font-size: 14px;
 				position: relative;}
 .footerTxt01 li:after{content:"";height: 8px;
 					  border: 1px solid #424242;
@@ -119,17 +122,19 @@ ul.footerOne>li:first-child:after{content:"";display: none}
 .footerTxt01 li a{display:block;padding:0 10px;line-height: 30px;
 				  padding: 0 20px;}
 					  
-.footerTxt02{width: 800px;margin:0 auto;}
-.footerTxt02 p{margin-right: 30px;font-size: 10px;}
+.footerTxt02{width: 800px;}
+.footerTxt02 p{font-size: 11px;line-height: 17px;color:#929292;}
 
-.title01{width: 303px;margin:0 auto;position: relative;}			
-.title01 h1{color:#fff;padding:30px 30px;display:block;font-size: 23px;}
+.title01{width: 300px;height: 225px;margin:0 auto;position: relative;
+		 padding:30px 30px;}			
+.title01 h1{color:#fff;display:block;font-size: 23px;}
 
-.iconWrapOne{width: 240px;height: 100px;position: absolute;left:30px;}
+.iconWrapOne{width: 240px;height: 100px;position: absolute;left:30px;
+			 bottom:40px;}
 	 
-.iconWrapOne a{width: 62px;height: 62px;float:left;margin-left:25px;
+.iconWrapOne a{width: 62px;height: 62px;float:left;margin-left:27px;
 			   color:white;text-align: center;
-			   font-size: 14px}
+			   font-size: 14px;}
 .iconWrapOne li:first-child a{margin-left:0;}
 
 .headerWrapOne{height: 40px;margin:0 auto;background: #0044af;}
