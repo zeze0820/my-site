@@ -66,16 +66,42 @@
 
 /*content03*/
 .con03{width: 100%;}
-.peopleWrap{width: 1200px;margin:0 auto;background: beige;
+.peopleWrap{width: 1200px;height: 1800px;margin:0 auto;_background: beige;
 			position: relative;}
-.people{width: 1200px;margin:0 auto;position: absolute;}
-.pLeft{float:left;}
-.pRight{width: 680px;height: 435px;float:right;_background: pink;
+.people01{width: 1200px;margin:0 auto;position: absolute;}
+.pLeft01{float:left;}
+.pRight01{width: 680px;height: 435px;float:right;_background: pink;
 		padding:130px 0;}
-.pRight>p{font-size:25px;font-weight:bold;top:20px;margin-bottom:20px;}
-.pRight>h5{font-size:20px;line-height:25px;position: relative;
+.pRight01>p{font-size:25px;font-weight:bold;top:20px;margin-bottom:20px;}
+.pRight01>h5{font-size:20px;line-height:25px;position: relative;
 		   text-indent:20px;}
-.pRight>h5:after{content:"";display: block;width: 3px;height: 50px;
+.pRight01>h5:after{content:"";display: block;width: 3px;height: 50px;
 				 background-color: #444daa;
                  position: absolute;top:0;}
-.pRight>h5>span{font-size:16px;position: absolute;}
+.pRight01>h5>span{font-size:16px;position: absolute;}
+
+.people02{width: 1200px;margin:0 auto;position: absolute;top:600px;}
+.pRight02{float:right;}
+.pLeft02{width: 680px;height: 435px;float:left;_background: pink;
+		padding:130px 0;}
+.pLeft02>p{font-size:25px;font-weight:bold;top:20px;margin-bottom:20px;}
+.pLeft02>h5{font-size:20px;line-height:25px;position: relative;
+		   text-indent:20px;}
+.pLeft02>h5:after{content:"";display: block;width: 3px;height: 50px;
+				 background-color: #444daa;
+                 position: absolute;top:0;}
+.pLeft02>h5>span{font-size:16px;position: absolute;}
+
+.people03{width: 1200px;margin:0 auto;position: absolute;top:1200px;}
+.pLeft03{float:left;}
+.pRight03{width: 580px;height: 542px;float:right;_background: pink;
+		  }
+.pRight03>h5{font-size:50px;font-weight:bold;margin-bottom:20px;}		
+.pRight03>p{font-size:20px;top:20px;margin-bottom:50px;}
+.pRight03>a{display: block;width: 290px;height: 70px;
+			background: #444daa;font-weight:bold;
+			color:white;text-align: center;line-height: 70px;}
+
+/*content04*/
+.askWrap{width: 1200px;height: 750px;margin:0 auto;position: relative;}
+.askWrap>h1{text-align: center;}
