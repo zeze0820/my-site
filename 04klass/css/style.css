@@ -32,13 +32,10 @@
 	 	   /*background: pink;*/}
 .learnWrap h1{text-align: center;padding:100px 0;}
 .learn{width: 1200px;margin:0 auto;position: absolute;}
-
-.learn .learnOne li a{width: 370px;height: 425px;float:left;
-			   		  /*background: #EAEAEA;*/margin-right:45px;
-			   		  box-shadow: 0 0 15px #eee;}
-.learn .learnOne li a:hover{box-shadow: 0 0 15px #aaa;}
-.learn .learnOne li:last-child a{margin-right: 0;}
-.learn .learnOne li{width: 1200px;margin:0 auto;}
+.learn li{float:left;width: 370px;height: 425px;margin-right:45px;
+		  box-shadow: 0 0 15px #eee;}
+.learn li:last-child{margin-right:0;}
+.learn .learnOne li:hover{box-shadow: 0 0 15px #aaa;}
 .learn .learnOne li img{width: 370px;height: 254px;position: absolute;}
 .learnTxt{width: 375px;position: absolute;text-align:center;
 		  top:270px;}
