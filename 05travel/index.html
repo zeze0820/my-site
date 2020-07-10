@@ -15,6 +15,7 @@
 			$(".slider").bxSlider({pager:false});
 			$(".slider01").bxSlider({pager:false});
 			$(".slider02").bxSlider({
+				infiniteLoop:true,pager:true,
 				pagerCustom:".bx-pager",controls:false});
 		});
 	</script>
@@ -77,7 +78,7 @@
 							<a href=""><li>휴양지</li></a>
 						</ul>
 					</div> -->
-					<div class="formWrap">
+					<div class="sliderWrap">
 						<ul class="slider02">
 							<li>
 								<form action="#" method="get" class="formLayer">
@@ -120,9 +121,10 @@
 									</fieldset>
 									<button type="submit" class="tBtn">검색하기</button>
 								</form>
+
 							</li>
 						</ul>
-							
+							<li>
 								<form action="#" method="get" class="formLayer">
 											<fieldset>
 												<legend>여행일정</legend>
@@ -163,7 +165,7 @@
 										</fieldset>
 									<button type="submit" class="tBtn">검색하기</button>
 								</form>
-						
+							
 					</div>	
 					<div class="bx-pager">
 						<a href="#" data-slide-index="0">공항예약</a>

@@ -115,6 +115,7 @@ box-shadow: none;
 border: 0 none;margin-bottom:0;
 }
 
+.sliderWrap{width: 350px;height: 300px;position: absolute;right:0;}
 .bx-pager{position: absolute;bottom:0;}
 .bx-pager a{display:block;width: 132px;_float:left;
 			line-height: 75px;text-align: center;
@@ -143,8 +144,8 @@ border: 0 none;margin-bottom:0;
 		   _background: #fff;}
 .con1Right .titleTxt{position: absolute;left:0;padding-left: 25px;
 					 padding-top: 20px;line-height:}
-.con1Right .titleTxt span{border-bottom: 6px solid #000;}
-.con1Right h1{font-size: 60px;font-weight: bold;}
+.con1Right .titleTxt h1>span{border-bottom: 6px solid #000;}
+.con1Right h1{font-size: 60px;font-weight: bold;padding-bottom: 15px}
 .con1Right p{font-size:25px;}
 
 .con2{width: 980px;height: 496px;margin:0 auto;position: relative;
