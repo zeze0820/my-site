@@ -7,6 +7,7 @@
 .gnb ul{}
 .gnb ul li{float:left;}
 .gnb ul li a{float:left;margin-left:50px;}
+.gnb ul li a:hover{color:#444daa;}
 /*slider*/
 .bx-wrapper .bx-controls-direction a{display:none;}
 .bx-wrapper {
@@ -19,8 +20,8 @@
 .visual{width: 100%;height: 790px;}
 .visual .view{width: 1450px;height: 790px;margin:0 auto;position: relative;}
 .visual .slider img.img01{position: absolute;border-radius:25px;}
-.visual .visualTxt{position: absolute;top:0;left:0;
-				   width: 400px;padding-top:230px;padding-left: 120px;}
+.visual .visualTxt{position: absolute;top:230px;left:125px;
+				   width: 400px;}
 .visual .visualTxt h2{width: 600px;height: 500px;font-size:50px;
 					  margin-bottom:-230px;color:#202344;}
 .visual .visualTxt a{display: block;width: 280px;height: 60px;
@@ -28,7 +29,7 @@
 					 color:white;text-align: center;line-height: 60px;}
 /*content01*/
 .con01{width: 100%;}
-.learnWrap{width: 1200px;height: 800px;margin:0 auto;position: relative;
+.learnWrap{width: 1200px;height: 750px;margin:0 auto;position: relative;
 	 	   /*background: pink;*/}
 .learnWrap h1{text-align: center;padding:100px 0;}
 .learn{width: 1200px;margin:0 auto;position: absolute;}
@@ -44,7 +45,7 @@
 
 /*content02*/
 .con02{width: 100%;}
-.courseWrap{width: 1200px;height: 800px;margin:0 auto;position: relative;
+.courseWrap{width: 1200px;height: 750px;margin:0 auto;position: relative;
 	 	   /*background: pink;*/}
 .courseWrap>h1{text-align: center;padding-bottom:20px;}
 .courseWrap>p{text-align: center;padding-bottom:50px;}
@@ -62,3 +63,19 @@
 .courseTxt>p{position: relative;margin-bottom:15px;}
 .courseTxt>p>span{position: absolute;top:0;right:0;color: #ff875a;}
 .courseTxt>a{color:#444daa;}
+
+/*content03*/
+.con03{width: 100%;}
+.peopleWrap{width: 1200px;margin:0 auto;background: beige;
+			position: relative;}
+.people{width: 1200px;margin:0 auto;position: absolute;}
+.pLeft{float:left;}
+.pRight{width: 680px;height: 435px;float:right;_background: pink;
+		padding:130px 0;}
+.pRight>p{font-size:25px;font-weight:bold;top:20px;margin-bottom:20px;}
+.pRight>h5{font-size:20px;line-height:25px;position: relative;
+		   text-indent:20px;}
+.pRight>h5:after{content:"";display: block;width: 3px;height: 50px;
+				 background-color: #444daa;
+                 position: absolute;top:0;}
+.pRight>h5>span{font-size:16px;position: absolute;}
