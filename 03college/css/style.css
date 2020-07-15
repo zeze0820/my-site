@@ -66,17 +66,6 @@ header#header{height: 160px;}
 			   color:white;text-align: center;line-height: 40px;
 			   border: 1px solid #fff;}
 
-/*.notice{width: 300px;height: 225px;color:white;}
-.notice img.img05{position: absolute;}
-.notice .noticeTxt{position: absolute;color:#fff;height: 225px;width: 300px;
-				   padding:30px 30px;margin:0 auto;}
-.noticeP{width: 240px;padding:20px 0;}
-.notice .noticeTxt h1{font-size: 23px;border-bottom:1px solid #fff;
-					 top:15px;padding-bottom: 10px;}
-.notice .noticeTxt .noticeP p{font-size: 13px;line-height:13px;
-					 color:white;bottom:0;line-height:25px;right:0;}
-.notice .noticeTxt .noticeP span{right:30px;position: absolute;}*/
-
 .notice{width: 300px;height: 225px;}
 .notice img.img05{position: absolute;}
 .notice .noticeTxt{position: absolute;color:#fff;height: 225px;width: 300px;

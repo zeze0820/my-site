@@ -127,5 +127,7 @@
 /*footer*/
 .footerWrap{height: 280px;}
 .footer{width: 1200px;height: 280px;margin: 0 auto;position: relative;
-		border-top: 1px solid #e4e4e4;}
-
+		border-top: 1px solid #e4e4e4;padding:50px 0;}
+.footer h1{position: absolute;left:0;}
+.footer .iconWrap{position: absolute;right:0;}
+.iconWrap>ul>li{float:left;margin-left:20px;}

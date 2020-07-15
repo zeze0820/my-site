@@ -116,6 +116,8 @@ border: 0 none;margin-bottom:0;
 }
 
 .sliderWrap{width: 350px;height: 300px;position: absolute;right:0;}
+.slider02>li{width: 350px;height: 300px;position: absolute;}
+
 .bx-pager{position: absolute;bottom:0;}
 .bx-pager a{display:block;width: 132px;_float:left;
 			line-height: 75px;text-align: center;
