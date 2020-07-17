@@ -12,8 +12,26 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({pager:false});
-			$(".slider01").bxSlider({pager:false});
+			var mySlider01=$(".slider").bxSlider({pager:false,controls:false});
+
+			$(".nextBtn01").click(function(){
+				mySlider01.goToNextSlide();
+			});
+			$(".prevBtn01").click(function(){
+				mySlider01.goToPrevSlide();
+			});
+
+			var mySlider=$(".slider01").bxSlider({
+									pager:false,
+									controls:false});
+
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
 			$(".slider02").bxSlider({
 				pager:true,
 				pagerCustom:".bx-pager",controls:false,
@@ -34,7 +52,7 @@
 						<button type="submit" class="searchBtn">search</button>
 					</form>
 				</div>
-				<p>+82 02 1234 5678</p>
+				<p><span>+82</span> 02 1234 5678</p>
 				<div class="iconWrap">
 					<ul class=clearfix>
 						<li><a href="#">
@@ -56,12 +74,66 @@
 		<div class="gnbWrap">
 			<div class="gnb">
 				<ul class="clearfix">
-					<li><a href="#">여행도시</a></li>
-					<li><a href="#">호텔예약</a></li>
-					<li><a href="#">렌트카</a></li>
-					<li><a href="#">여행TIP</a></li>
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li>
+						<a href="#">여행도시</a>
+						<ul class="smenu clearfix">
+							<li><a href="#">smenu0101</a></li>
+							<li><a href="#">smenu0102</a></li>
+							<li><a href="#">smenu0103</a></li>
+							<li><a href="#">smenu0104</a></li>
+							<li><a href="#">smenu0105</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">호텔예약</a>
+						<ul class="smenu clearfix" style="padding-left: 160px">
+							<li><a href="#">smenu0201</a></li>
+							<li><a href="#">smenu0202</a></li>
+							<li><a href="#">smenu0203</a></li>
+							<li><a href="#">smenu0204</a></li>
+							<li><a href="#">smenu0205</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">렌트카</a>
+						<ul class="smenu clearfix" style="padding-left: 320px">
+							<li><a href="#">smenu0301</a></li>
+							<li><a href="#">smenu0302</a></li>
+							<li><a href="#">smenu0303</a></li>
+							<li><a href="#">smenu0304</a></li>
+							<li><a href="#">smenu0305</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">여행TIP</a>
+						<ul class="smenu clearfix" style="padding-left: 480px">
+							<li><a href="#">smenu0401</a></li>
+							<li><a href="#">smenu0402</a></li>
+							<li><a href="#">smenu0403</a></li>
+							<li><a href="#">smenu0404</a></li>
+							<li><a href="#">smenu0405</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">회사소개</a>
+						<ul class="smenu clearfix" style="padding-left: 480px">
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">사업영역</a></li>
+							<li><a href="#">조직표</a></li>
+							<li><a href="#">채용정보</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">커뮤니티</a>
+						<ul class="smenu clearfix" style="padding-left: 480px">
+							<li><a href="#">smenu0601</a></li>
+							<li><a href="#">smenu0602</a></li>
+							<li><a href="#">smenu0603</a></li>
+							<li><a href="#">smenu0604</a></li>
+							<li><a href="#">smenu0605</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -304,7 +376,13 @@
 									</div>
 								</div>
 							</li>
-						</ul>		
+						</ul>
+						<div class="nextBtn">
+							<img src="images/arrow02.jpg" alt="">	
+						</div>
+						<div class="prevBtn">
+							<img src="images/arrow01.jpg" alt="">
+						</div>		
 					</li>
 					<li>
 						<ul class="slider">
@@ -326,7 +404,13 @@
 									</div>
 								</div>
 							</li>
-						</ul>		
+						</ul>
+						<div class="nextBtn01">
+							<img src="images/arrow02.jpg" alt="">	
+						</div>
+						<div class="prevBtn01">
+							<img src="images/arrow01.jpg" alt="">
+						</div>		
 					</li>
 					<li>
 						<img src="images/travel05.jpg" alt="">

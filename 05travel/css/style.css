@@ -10,6 +10,7 @@ body{overflow-y:auto;overflow-x:hidden;}
 .header h1 a{position: absolute;left:0;top:25px;color:white;}
 .header p{position: absolute;right:160px;top:25px;color:white;
 		  font-size:30px}
+.header p>span{font-weight:bold;}
 .iconWrap{position: absolute;right:0;top:30px;}
 .iconWrap>ul{width: 140px;}
 .iconWrap>ul>li{float:left;margin-left:5px;}
@@ -211,6 +212,16 @@ border: 0 none;margin-bottom:0;
 .con2Top .img02>li img.img4{
 	width: 70px;height: 15px;position: absolute;top:120px;left:0;}
 
+.nextBtn,.prevBtn{position: absolute;top:50%;margin-top: -50px;
+				  cursor:pointer;opacity:0.8;}
+.prevBtn{left:0;}
+.nextBtn{right:0;}
+
+.nextBtn01,.prevBtn01{position: absolute;top:50%;margin-top: -50px;
+				  cursor:pointer;opacity:0.8;}
+.prevBtn01{left:0;}
+.nextBtn01{right:0;}
+
 .con2 .con2Bottom{width: 980px;height: 240px;position: absolute;bottom:0;}
 .con2Bottom .img03{width: 980px;height: 240px;}
 .con2Bottom .img03>li{float:left;width: 233;height: 240px;margin-right:16px;;
@@ -243,6 +254,7 @@ border: 0 none;margin-bottom:0;
 				   color:white;padding:50px 0;font-size:0.9em;}
 
 /*company*/
+#company{width: 100%;height: 1350px;background-color: #efefef;position: relative;}
 #company .topWrap{
 	width: 100%;height: 290px;
 	background: url(../images/subimg01.jpg) no-repeat center;
@@ -254,10 +266,10 @@ border: 0 none;margin-bottom:0;
 			 border-bottom: 5px solid #fff;margin-bottom:10px;}
 .topTitle p{color:white;}
 .topTitle p>span{font-weight:bold;}
-#company .bottomWrap{
+/*#company .bottomWrap{
 	width: 100%;height: 950px;background-color: #efefef;position: relative;
 
-}
+}*/
 .bBox{
 	width: 980px;height: 920px;background: #fff;
 	margin:0 auto;border-top: 6px solid #0e73a7;
