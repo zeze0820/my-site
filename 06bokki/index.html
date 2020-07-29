@@ -7,26 +7,54 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 
 	<script>
 		$(document).ready(function(){
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:600,
+				innerHeight:337});
+
 			var mySlider=$(".slider").bxSlider({
 								   auto:true,
 				                   controls:false
 				                   });
 		
-		$(".nextBtn").click(function(){
-			mySlider.goToNextSlide();
-		});
-		$(".prevBtn").click(function(){
-			mySlider.goToPrevSlide();
-		});
-
-			$(".slider01").bxSlider({
-
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
 			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+			var mySlider01=$(".slider01").bxSlider({
+						auto:true,
+				        controls:false
+			});
+
+			$(".nextBtn01").click(function(){
+				mySlider01.goToNextSlide();
+			});
+			$(".prevBtn01").click(function(){
+				mySlider01.goToPrevSlide();
+			});
+
+			var mySlider02=$(".slider02").bxSlider({
+						auto:true,
+				        controls:false,
+				        pager:false
+			});
+			$(".nextBtn02").click(function(){
+				mySlider02.goToNextSlide();
+			});
+			$(".prevBtn02").click(function(){
+				mySlider02.goToPrevSlide();
+			});
+
 		});
 	</script>
 </head>
@@ -77,10 +105,47 @@
 						<p>고객게시판</p>
 					</div>
 				</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
+				<li>
+					<div class="bVideo">
+						<img src="images/con01.jpg" alt="">
+						<a href="https://www.youtube.com/embed/tfxI0goPsSY>" class="youtube">
+						<img src="images/play_btn.png" alt="" class="img09"></a>
+						<p>브랜드영상</p>
+					</div>
+				</li>
+				<li>
+					<div class="search">
+						<p>매장찾기</p>
+						<div class="btnWrap claerfix">
+							<div class="prevBtn02">
+								<img src="images/btn_01.jpg" alt="">
+							</div>
+							<div class="nextBtn02">
+								<img src="images/btn_02.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>	
+					<div class="sSearch">
+						<div class="sSliderWrap">				
+							<ul class="slider02">
+								<li>
+									<img src="images/con02.jpg" alt="" class="img10">
+								</li>
+								<li>
+									<img src="images/con02.jpg" alt="" class="img11">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="tMenu">
+						<img src="images/con03.jpg" alt="">
+						<p>떡볶이 메뉴</p>
+					</div>
+				</li>
 				<li>
 					<div class="intro">
 						<img src="images/icon02.png" alt="" class="img02">
@@ -93,8 +158,18 @@
 						<p>오시는 길</p>
 					</div>
 				</li>
-				<li>8</li>
-				<li>9</li>
+				<li>
+					<div class="fMenu">
+						<img src="images/con04.jpg" alt="">
+						<p>튀김 메뉴</p>
+					</div>
+				</li>
+				<li>
+					<div class="fran">
+						<img src="images/con05.jpg" alt="">
+						<p>프랜차이즈</p>
+					</div>
+				</li>
 				<li>
 					<div class="info">
 						<img src="images/icon07.png" alt="" class="img04">
@@ -107,7 +182,12 @@
 						<p>추천점포</p>
 					</div>
 				</li>
-				<li>12</li>
+				<li>
+					<div class="friend">
+						<img src="images/con06.jpg" alt="">
+						<p>친구메뉴</p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</header>
@@ -177,6 +257,56 @@
 						</div>
 					</li>
 				</ul>
+				<div class="prevBtn01">
+					<img src="images/arrow01.jpg" alt="">
+				</div>
+				<div class="nextBtn01">
+					<img src="images/arrow02.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="callWrap">
+		<div class="call">
+			<ul class="clearfix">
+				<li><a href="#">
+					<div class="bLeft clearfix">
+						<img src="images/banner01.jpg" alt="">
+						<div class="bLeft01">
+							<img src="images/icon05.png" alt="" class="img06">
+							<h2>가맹문의</h2>
+						</div>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<div class="bRight">
+						<img src="images/banner02.jpg" alt="">
+						<div class="bRight01">
+							<img src="images/icon06.png" alt="" class="img07">
+							<h2>고객센터</h2>
+						</div>
+					</div>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footerWrap">
+		<div class="footer">
+			<img src="images/logo02.png" alt="" class="img08">
+			<div class="footerTxt">
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">상담문의</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<p>(주)신참에프앤씨·대표 박재석·사업자등록번호 503-86-17722<br>
+					대구본사·대구광역시 서구 달서로 97(비산동)·T.1577-7698<br>
+					서울가맹사업본부·서울시 송파구 송파대로 167 테라타워1 B동 1003호·T.1577-7698<br>
+					Copyright(c)2016 SINCHAM All right reserved.
+				</p>
 			</div>
 		</div>
 	</div>
