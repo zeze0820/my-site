@@ -60,6 +60,19 @@
 
 		});
 	</script>
+	<script>
+		$(document).ready(function(){
+			$("#main_menu>ul>li").mouseover(function(){
+				var i = $(this).index();
+				$("#main_menu>ul>li").eq(i).find("ul.smenu").css("display","block");
+				
+				// $("#menu>ul>li:eq("+i+")").find("ul.sub").css("display","block"); //위와 같은 식
+			});
+			$("#main_menu>ul>li").mouseout(function(){
+				$("ul.smenu").css("display","none")
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="header" class="main">
@@ -69,7 +82,7 @@
 				<ul class="clearfix">
 					<li>
 						<a href="sub01.html">BRAND</a>
-						<ul class="smenu" style="padding-left: 550px">
+						<ul class="smenu">
 							<li><a href="#">BRAND 소개</a></li>
 							<li><a href="#">B.I</a></li>
 							<li><a href="#">오시는 길</a></li>
@@ -78,7 +91,7 @@
 					</li>
 					<li>
 						<a href="sub02.html">MENU</a>
-						<ul class="smenu" style="padding-left: 670px">
+						<ul class="smenu">
 							<li><a href="#">떡볶이 메뉴</a></li>
 							<li><a href="#">튀김 메뉴</a></li>
 							<li><a href="#">음료 메뉴</a></li>
@@ -86,8 +99,8 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">FRANCHISE</a>
-						<ul class="smenu" style="padding-left: 800px">
+						<a href="sub03.html">FRANCHISE</a>
+						<ul class="smenu">
 							<li><a href="#">신참의 경쟁력</a></li>
 							<li><a href="#">창업 개설비용</a></li>
 							<li><a href="#">예상 수익 분석</a></li>
@@ -98,7 +111,7 @@
 					</li>
 					<li>
 						<a href="#">STORE</a>
-						<ul class="smenu" style="padding-left: 940px">
+						<ul class="smenu">
 							<li><a href="#">국내 매장 찾기</a></li>
 							<li><a href="#">국외 매장 찾기</a></li>
 							<li><a href="#">인테리어</a></li>
@@ -106,7 +119,7 @@
 					</li>
 					<li>
 						<a href="#">COMMUNITY</a>
-						<ul class="smenu" style="padding-left: 1080px">
+						<ul class="smenu">
 							<li><a href="">커뮤니티</a></li>
 							<li><a href="#">고객게시판</a></li>
 							<li><a href="#">점주 공간</a></li>
@@ -122,6 +135,7 @@
 				<div class="bar3"></div>
 			</div>
 		</div>
+		
 		<div class="slider_wrap">
 			<ul class="slider">
 				<li class="first">
@@ -150,10 +164,12 @@
 		<div class="content">
 			<ul>
 				<li>
-					<div class="cus">
-						<img src="images/icon01.png" alt="" class="img01">
-						<p>고객게시판</p>
-					</div>
+					<a href="#">
+						<div class="cus">
+							<img src="images/icon01.png" alt="" class="img01">
+							<p>고객게시판</p>
+						</div>
+					</a>
 				</li>
 				<li>
 					<div class="bVideo">
@@ -181,62 +197,88 @@
 						<div class="sSliderWrap">				
 							<ul class="slider02">
 								<li>
-									<img src="images/con02.jpg" alt="" class="img10">
+									<a href="#">
+										<div class="slider02Txt">
+											<img src="images/con02.jpg" alt="" class="img10">
+											<p>국내 매장찾기</p>
+										</div>
+									</a>
 								</li>
 								<li>
-									<img src="images/con02.jpg" alt="" class="img11">
+									<a href="#">
+										<div class="slider02Txt">
+											<img src="images/con02.jpg" alt="" class="img11">
+											<p>국외 매장찾기</p>
+										</div>
+									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="tMenu">
-						<img src="images/con03.jpg" alt="">
-						<p>떡볶이 메뉴</p>
-					</div>
+					<a href="#">
+						<div class="tMenu">
+							<img src="images/con03.jpg" alt="">
+							<p>떡볶이 메뉴</p>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div class="intro">
-						<img src="images/icon02.png" alt="" class="img02">
-						<p>브랜드소개</p>
-					</div>
+					<a href="#">
+						<div class="intro">
+							<img src="images/icon02.png" alt="" class="img02">
+							<p>브랜드소개</p>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div class="road">
-						<img src="images/icon03.png" alt="" class="img03">
-						<p>오시는 길</p>
-					</div>
+					<a href="#">
+						<div class="road">
+							<img src="images/icon03.png" alt="" class="img03">
+							<p>오시는 길</p>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div class="fMenu">
-						<img src="images/con04.jpg" alt="">
-						<p>튀김 메뉴</p>
-					</div>
+					<a href="#">
+						<div class="fMenu">
+							<img src="images/con04.jpg" alt="">
+							<p>튀김 메뉴</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="fran">
-						<img src="images/con05.jpg" alt="">
-						<p>프랜차이즈</p>
-					</div>
+					<a href="#">
+						<div class="fran">
+							<img src="images/con05.jpg" alt="">
+							<p>프랜차이즈</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="info">
-						<img src="images/icon07.png" alt="" class="img04">
-						<p>정보공개서 신청</p>
-					</div>
+					<a href="#">
+						<div class="info">
+							<img src="images/icon07.png" alt="" class="img04">
+							<p>정보공개서 신청</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="com">
-						<img src="images/icon04.png" alt="" class="img05">
-						<p>추천점포</p>
-					</div>
+					<a href="#">
+						<div class="com">
+							<img src="images/icon04.png" alt="" class="img05">
+							<p>추천점포</p>
+						</div>
+					</a>	
 				</li>
 				<li>
-					<div class="friend">
-						<img src="images/con06.jpg" alt="">
-						<p>친구메뉴</p>
-					</div>
+					<a href="#">
+						<div class="friend">
+							<img src="images/con06.jpg" alt="">
+							<p>친구메뉴</p>
+						</div>
+					</a>	
 				</li>
 			</ul>
 		</div>
@@ -250,28 +292,36 @@
 						<div class="s01">
 							<ul class="clearfix">
 								<li>
+									<a href="https://youtu.be/EuHT3yItSRY" target="_blank">
 									<div class="simg01">
 										<img src="images/video01.jpg" alt="">
 										<p>#치즈가득<br>#달고마떡볶이<br>#참치마요컵밥에 튀김까지!</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="https://youtu.be/kRQbufDthh4" target="_blank">
 									<div class="simg02">
 										<img src="images/video02.jpg" alt="">
 										<p>#맵찔이도 맛있게!<br>#튀김, 어묵<br>#컵밥 4종 리뷰!</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="https://youtu.be/E_aPCBTWuSQ" target="_blank">
 									<div class="simg03">
 										<img src="images/video03.jpg" alt="">
 										<p>#바삭바삭 새우튀김<br>#리얼사운드<br>#ASMR</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="https://youtu.be/cuAvnMsE8xY" target="_blank">
 									<div class="simg04">
 										<img src="images/video04.jpg" alt="">
 										<p>#분식파티(feat.떡튀순오)<br>#치즈폭탄<br>#멍멍이랑 함께 하는 먹방</p>
 									</div>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -280,28 +330,36 @@
 						<div class="s01">
 							<ul class="clearfix">
 								<li>
+									<a href="#">
 									<div class="simg01">
 										<img src="images/video01.jpg" alt="">
 										<p>#치즈가득<br>#달고마떡볶이<br>#참치마요컵밥에 튀김까지!</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="#">
 									<div class="simg02">
 										<img src="images/video02.jpg" alt="">
 										<p>#맵찔이도 맛있게!<br>#튀김, 어묵<br>#컵밥 4종 리뷰!</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="#">
 									<div class="simg03">
 										<img src="images/video03.jpg" alt="">
 										<p>#바삭바삭 새우튀김<br>#리얼사운드<br>#ASMR</p>
 									</div>
+									</a>
 								</li>
 								<li>
+									<a href="#">
 									<div class="simg04">
 										<img src="images/video04.jpg" alt="">
 										<p>#분식파티(feat.떡튀순오)<br>#치즈폭탄<br>#멍멍이랑 함께 하는 먹방</p>
 									</div>
+									</a>
 								</li>
 							</ul>
 						</div>
