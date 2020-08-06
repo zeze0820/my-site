@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>bokki_sub03</title>
+	<title>bokki_sub05</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	
@@ -12,21 +12,19 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-</head>
-<script>
+
+	<script>
 	var viewImg = [
-			"images/subcon09.jpg",
-			"images/subcon10.jpg",
-			"images/subcon11.jpg",
-			"images/subcon12.jpg",
-			"images/subcon13.jpg",
-			"images/subcon14.jpg"
+			"images/subcon01.jpg",
+			"images/subcon02.jpg",
+			"images/subcon03.jpg",
+			"images/subcon04.jpg"
 			];
 
 		$(document).ready(function(){
-			$(".tabWrap0>ul>li").click(function(){
+			$(".tabWrap>ul>li").click(function(){
 				var liNum = $(this).index();
-				$(".sCon03>img").attr("src",viewImg[liNum]);
+				$(".sCon05>img").attr("src",viewImg[liNum]);
 				
 			});
 		});
@@ -39,6 +37,7 @@
 			});
 		});
 	</script>
+</head>
 <body>
 	<header id="header00" class="main">
 		<div id="header_top" class="clearfix">
@@ -58,41 +57,59 @@
 				<div class="bar3"></div>
 			</div>
 		</div>
-		<div class="headerImg01">
-			<h2>FRANCHISE</h2>
-			<img src="images/sub_vis_03.png" alt="">
+		<div class="headerImg05">
+			<h2>COMMUNITY</h2>
+			<img src="images/sub_vis_05.png" alt="">
 		</div>
-		<div class="tabWrap0">
+		<div class="tabWrap">
 			<ul class="clearfix">
-				<li class="active"><a href="#">신참의 경쟁력</a></li>
-				<li><a href="#">창업 개설비용</a></li>
-				<li><a href="#">예상 수익 분석</a></li>
-				<li><a href="#">가맹 개설 절차</a></li>
-				<li><a href="#">창업특전</a></li>
-				<li><a href="#">가맹문의</a></li>
+				<li class="active"><a href="#">공지사항</a></li>
+				<li><a href="#">고객게시판</a></li>
+				<li><a href="#">점주 공간</a></li>
+				<li><a href="#">추천점포</a></li>
 			</ul>
 		</div>
 		<div class="subWrapper">
-			<div class="sWrap03">
-				<div class="location03">
+			<div class="sWrap05">
+				<div class="location05">
 					<ul class="clearfix">
 						<li><img src="images/icon09.png" alt=""></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>FRANCHISE</p></li>
+						<li><p>COMMUNITY</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>신참의 경쟁력</p></li>
+						<li><p>공지사항</p></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="sContainer03">
-		<div class="sTitle03">
-			<h3>신참의 경쟁력</h3>
+	<div class="sContainer05">
+		<div class="sTitle05">
+			<h3>공지사항</h3>
 		</div>
-		<div class="sCon03">
-			<img src="images/subcon09.jpg" alt="" class="stimg03">
+		<div class="sCon05">
+			<img src="images/subcon01.jpg" alt="" class="stimg05">
 		</div>
 	</div>
+	<!-- <div class="footerWrap">
+		<div class="footer">
+			<img src="images/logo02.png" alt="" class="img08">
+			<div class="footerTxt">
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">상담문의</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<p>(주)신참에프앤씨·대표 박재석·사업자등록번호 503-86-17722<br>
+					대구본사·대구광역시 서구 달서로 97(비산동)·T.1577-7698<br>
+					서울가맹사업본부·서울시 송파구 송파대로 167 테라타워1 B동 1003호·T.1577-7698<br>
+					Copyright(c)2016 SINCHAM All right reserved.
+				</p>
+			</div>
+		</div>
+	</div> -->
 </body>
 </html>

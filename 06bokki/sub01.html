@@ -38,6 +38,14 @@
 		});
 
 	</script>
+	<script>
+		$(document).ready(function(){
+			$("ul>li").click(function(){
+				$("ul>li").removeClass();
+				$(this).addClass("active");
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="header00" class="main">
@@ -58,7 +66,7 @@
 						<a href="sub04.html">STORE</a>
 					</li>
 					<li>
-						<a href="#">COMMUNITY</a>
+						<a href="sub05.html">COMMUNITY</a>
 					</li>
 				</ul>
 			</nav>
@@ -74,18 +82,10 @@
 		</div>
 		<div class="tabWrap">
 			<ul class="clearfix">
-				<li>
-					<a href="#">BRAND 소개</a>
-				</li>
-				<li>
-					<a href="#">B.I</a>
-				</li>
-				<li>
-					<a href="#">오시는 길</a>
-				</li>
-				<li>
-					<a href="#">정보공개서 신청</a>
-				</li>
+				<li class="active"><a href="#">BRAND 소개</a></li>
+				<li><a href="#">B.I</a></li>
+				<li><a href="#">오시는 길</a></li>
+				<li><a href="#">정보공개서 신청</a></li>
 			</ul>
 		</div>
 		<div class="subWrapper">

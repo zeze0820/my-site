@@ -14,16 +14,24 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 	var viewImg = [
-			"images/subcon05.jpg",
-			"images/subcon06.jpg",
-			"images/subcon08.jpg"
+			"images/subcon15.jpg",
+			"images/subcon16.jpg",
+			"images/subcon17.jpg"
 			];
 
 		$(document).ready(function(){
-			$(".tabWrap>ul>li").click(function(){
+			$(".tabWrap01>ul>li").click(function(){
 				var liNum = $(this).index();
 				$(".sCon04>img").attr("src",viewImg[liNum]);
 				
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("ul>li").click(function(){
+				$("ul>li").removeClass();
+				$(this).addClass("active");
 			});
 		});
 	</script>
@@ -38,7 +46,7 @@
 					<li><a href="sub02.html">MENU</a></li>
 					<li><a href="sub03.html">FRANCHISE</a></li>
 					<li><a href="sub04.html">STORE</a></li>
-					<li><a href="#">COMMUNITY</a></li>
+					<li><a href="sub05.html">COMMUNITY</a></li>
 				</ul>
 			</nav>
 			<div class="toggleMenu">
@@ -47,13 +55,13 @@
 				<div class="bar3"></div>
 			</div>
 		</div>
-		<div class="headerImg01">
+		<div class="headerImg05">
 			<h2>STORE</h2>
 			<img src="images/sub_vis_04.png" alt="">
 		</div>
-		<div class="tabWrap">
+		<div class="tabWrap01">
 			<ul class="clearfix">
-				<li><a href="#">국내 매장 찾기</a></li>
+				<li class="active"><a href="#">국내 매장 찾기</a></li>
 				<li><a href="#">해외 매장 찾기</a></li>
 				<li><a href="#">인테리어</a></li>
 			</ul>
@@ -74,7 +82,7 @@
 	</header>
 	<div class="sContainer04">
 		<div class="sCon04">
-			<img src="images/subcon05.jpg" alt="" class="stimg04">
+			<img src="images/subcon15.jpg" alt="" class="stimg04">
 		</div>
 	</div>
 </body>

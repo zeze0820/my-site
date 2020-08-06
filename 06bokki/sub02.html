@@ -29,6 +29,14 @@
 			});
 		});
 	</script>
+	<script>
+		$(document).ready(function(){
+			$("ul>li").click(function(){
+				$("ul>li").removeClass();
+				$(this).addClass("active");
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="header00" class="main">
@@ -40,7 +48,7 @@
 					<li><a href="sub02.html">MENU</a></li>
 					<li><a href="sub03.html">FRANCHISE</a></li>
 					<li><a href="sub04.html">STORE</a></li>
-					<li><a href="#">COMMUNITY</a></li>
+					<li><a href="sub05.html">COMMUNITY</a></li>
 				</ul>
 			</nav>
 			<div class="toggleMenu">
@@ -55,7 +63,7 @@
 		</div>
 		<div class="tabWrap">
 			<ul class="clearfix">
-				<li><a href="#">떡볶이 메뉴</a></li>
+				<li class="active"><a href="#">떡볶이 메뉴</a></li>
 				<li><a href="#">튀김 메뉴</a></li>
 				<li><a href="#">음료 메뉴</a></li>
 				<li><a href="#">친구 메뉴</a></li>
