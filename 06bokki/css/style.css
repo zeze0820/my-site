@@ -445,26 +445,26 @@ nav#main_menu>ul:hover ~ .menubar{display:block;}*/
 /*.sCon02{width: 1920px;position: absolute;margin:0 auto;}*/
 
 /*subage05*/
-.tabWrap>ul>li.active a{background: #fff;color:#ae1000;}
+.tabWrap01>ul>li.active a{background: #fff;color:#ae1000;}
 
-.headerImg05{position: relative;width: 100%;}
+.headerImg05{position: relative;}
 .headerImg05>img{position: absolute;left:50%;transform:translateX(-50%);}
 .headerImg05>h2{position: absolute;top:200px;left:50%;z-index:1;
 			    transform:translateX(-50%);color:white;
 				font-size:50px;font-family: 'yg-jalnan';}
-.tabWrap{width: 1260px;height: 70px;position: absolute;left:50%;
+.tabWrap01{width: 945px;height: 70px;position: absolute;left:50%;
 		 transform:translateX(-50%);top:430px;}
-.tabWrap>ul{}
-.tabWrap>ul>li{float:left;background:#ae1000;
+.tabWrap01>ul{}
+.tabWrap01>ul>li{float:left;background:#ae1000;
 			   width: 315px;height: 70px;}
-.tabWrap>ul>li>a{
+.tabWrap01>ul>li>a{
 	float:left;font-size:18px;color:white;font-weight:bold;
 	text-align:center;line-height:70px;width: 315px;height: 70px;}
-.tabWrap>ul>li>a:hover{background: #fff;color:#ae1000;}
+.tabWrap01>ul>li>a:hover{background: #fff;color:#ae1000;}
 .subWrapper{width: 100%;}
 .sWrap05{position: relative;width: 1260px;margin:0 auto;}
 .sWrap05>img{}
-.sCon05{position: relative;width: 100%;}
+.sCon05{position: absolute;width: 100%;}
 .sCon05 img.stimg05{
 	transform:translateX(-50%);left:50%;position: absolute;
 	}
