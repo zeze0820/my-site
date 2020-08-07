@@ -34,15 +34,22 @@
 				var liNum = $(this).index();
 				$(".sCon01>img").attr("src",viewImg[liNum]);
 				
-			});
-		});
-
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("ul>li").click(function(){
-				$("ul>li").removeClass();
+			
+				$(".tabWrap>ul>li").removeClass();
 				$(this).addClass("active");
+				if(liNum == 0){
+					$(".subMenu01").html("BRAND 소개")
+				}
+				if(liNum == 1){
+					$(".subMenu01").html("B.I")
+				}
+				if(liNum == 2){
+					$(".subMenu01").html("오시는 길")
+				}
+				if(liNum == 3){
+					$(".subMenu01").html("정보공개서 신청")
+				}
+				return false;
 			});
 		});
 	</script>
@@ -94,9 +101,9 @@
 					<ul class="clearfix">
 						<li><img src="images/icon09.png" alt=""></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>MENU</p></li>
+						<li><p>BRAND</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>떡볶이 메뉴</p></li>
+						<li><p class="subMenu01">BRAND 소개</p></li>
 					</ul>
 				</div>
 			</div>
@@ -129,6 +136,6 @@
 				</p>
 			</div>
 		</div>
-	</div>	 -->
+	</div> -->
 </body>
 </html>
