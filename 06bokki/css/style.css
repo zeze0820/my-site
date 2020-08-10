@@ -76,7 +76,7 @@ nav#main_menu>ul:hover ~ .menubar{display:block;}*/
 /*bxslider*/
 .slider_wrap{height: 1005px;}
 .slider_wrap ul li{
-	width: 1000px;height: 1005px;position: relative;}
+	height: 1005px;position: relative;}
 .slider_wrap li.first{
 	background:url(../images/main01.jpg) no-repeat center;
 	background-size:cover;
@@ -217,7 +217,7 @@ nav#main_menu>ul:hover ~ .menubar{display:block;}*/
 .sns h1{font-family: 'yg-jalnan';color:white;
 		text-align:center;top:60px;position: absolute;left:50%;
 		transform:translateX(-50%);}
-		
+
 .simg01{position: relative;width: 380px;height: 500px;}
 .simg01 img{position: absolute;left:15px;top:15px;}
 .simg01 p{position: absolute;width: 350px;height: 150px;
