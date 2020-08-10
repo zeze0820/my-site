@@ -24,14 +24,30 @@
 				var liNum = $(this).index();
 				$(".sCon04>img").attr("src",viewImg[liNum]);
 				
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("ul>li").click(function(){
-				$("ul>li").removeClass();
+				$(".tabWrap01>ul>li").removeClass();
 				$(this).addClass("active");
+
+				if(liNum == 0){
+					$(".subMenu04").html("국내 매장 찾기")
+				}
+				if(liNum == 1){
+					$(".subMenu04").html("해외 매장 찾기")
+				}
+				if(liNum == 2){
+					$(".subMenu04").html("인테리어")
+				}
+				
+
+				if(liNum == 0){
+					$(".subMenu004").html("국내 매장 찾기")
+				}
+				if(liNum == 1){
+					$(".subMenu004").html("해외 매장 찾기")
+				}
+				if(liNum == 2){
+					$(".subMenu004").html("인테리어")
+				}
+				return false;
 			});
 		});
 	</script>
@@ -74,13 +90,16 @@
 						<li><img src="images/icon10.png" alt=""></li>
 						<li><p>MENU</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>떡볶이 메뉴</p></li>
+						<li><p class="subMenu04">떡볶이 메뉴</p></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="sContainer04">
+		<div class="sTitle04">
+			<h3 class="subMenu004">국내 매장 찾기</h3>
+		</div>
 		<div class="sCon04">
 			<img src="images/subcon15.jpg" alt="" class="stimg04">
 		</div>

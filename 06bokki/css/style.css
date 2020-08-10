@@ -284,7 +284,16 @@ nav#main_menu>ul:hover ~ .menubar{display:block;}*/
 .footerTxt>ul>li>a{color:white;margin-right:30px;}
 .footerTxt>p{color:white;font-size:14px;}
 
+.top{position:fixed;width: 50px;height: 50px;line-height:50px;
+	 right: 50px;bottom: 50px;border-radius:50%;background: #000;
+	 color:white;text-align:center;cursor:pointer;
+	 animation:viewTop 1s infinite alternate;opacity:0;
+	 transition:0.3s;}
+@keyframes viewTop{
+	from{transform:translateY(0);}
+	to{transform:translateY(-20px);}
 }
+.top.view{opacity:1;}
 /*pc layout*/
 
 /*subpage01*/

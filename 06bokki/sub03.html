@@ -28,14 +28,50 @@
 				var liNum = $(this).index();
 				$(".sCon03>img").attr("src",viewImg[liNum]);
 				
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("ul>li").click(function(){
-				$("ul>li").removeClass();
+				$(".tabWrap0>ul>li").removeClass();
 				$(this).addClass("active");
+
+
+				if(liNum == 0){
+					$(".subMenu03").html("신참의 경쟁력")
+				}
+				if(liNum == 1){
+					$(".subMenu03").html("창업 개설비용")
+				}
+				if(liNum == 2){
+					$(".subMenu03").html("예상 수익 분석")
+				}
+				if(liNum == 3){
+					$(".subMenu03").html("가맹 개설 절차")
+				}
+				if(liNum == 4){
+					$(".subMenu03").html("창업특전")
+				}
+				if(liNum == 5){
+					$(".subMenu03").html("가맹문의")
+				}
+				
+
+				if(liNum == 0){
+					$(".subMenu003").html("신참의 경쟁력")
+				}
+				if(liNum == 1){
+					$(".subMenu003").html("창업 개설비용")
+				}
+				if(liNum == 2){
+					$(".subMenu003").html("예상 수익 분석")
+				}
+				if(liNum == 3){
+					$(".subMenu003").html("가맹 개설 절차")
+				}
+				if(liNum == 4){
+					$(".subMenu003").html("창업특전")
+				}
+				if(liNum == 5){
+					$(".subMenu003").html("가맹문의")
+				}
+				return false;
+
 			});
 		});
 	</script>
@@ -80,7 +116,7 @@
 						<li><img src="images/icon10.png" alt=""></li>
 						<li><p>FRANCHISE</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>신참의 경쟁력</p></li>
+						<li><p class="subMenu03">신참의 경쟁력</p></li>
 					</ul>
 				</div>
 			</div>
@@ -88,7 +124,7 @@
 	</header>
 	<div class="sContainer03">
 		<div class="sTitle03">
-			<h3>신참의 경쟁력</h3>
+			<h3 class="subMenu003">신참의 경쟁력</h3>
 		</div>
 		<div class="sCon03">
 			<img src="images/subcon09.jpg" alt="" class="stimg03">

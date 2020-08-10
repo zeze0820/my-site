@@ -25,19 +25,27 @@
 			$(".tabWrap>ul>li").click(function(){
 				var liNum = $(this).index();
 				$(".sCon02>img").attr("src",viewImg[liNum]);
-				
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("ul>li").click(function(){
-				$("ul>li").removeClass();
+
+				$(".tabWrap>ul>li").removeClass();
 				$(this).addClass("active");
+
+				if(liNum == 0){
+					$(".subMenu02").html("떡볶이 메뉴")
+				}
+				if(liNum == 1){
+					$(".subMenu02").html("튀김 메뉴")
+				}
+				if(liNum == 2){
+					$(".subMenu02").html("음료 메뉴")
+				}
+				if(liNum == 3){
+					$(".subMenu02").html("친구 메뉴")
+				}
+				return false;
+
 			});
 		});
 	</script>
-</head>
 <body>
 	<header id="header00" class="main">
 		<div id="header_top" class="clearfix">
@@ -77,7 +85,7 @@
 						<li><img src="images/icon10.png" alt=""></li>
 						<li><p>MENU</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>떡볶이 메뉴</p></li>
+						<li><p class="subMenu02">떡볶이 메뉴</p></li>
 					</ul>
 				</div>
 			</div>

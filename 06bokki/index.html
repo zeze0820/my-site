@@ -72,6 +72,20 @@
 				$("ul.smenu").css("display","none")
 			});
 		});
+		$(function(){
+			var winHeight = $(document).height();
+			
+			$(window).scroll(function(){
+				if(winHeight/2 < scrollY){
+						$(".top").addClass("view");
+					}else{
+						$(".top").removeClass("view");
+					}
+			});
+			$(".top").click(function(){
+					$("html,body").animate({scrollTop:0},300);
+				});
+		});
 	</script>
 </head>
 <body>
@@ -398,7 +412,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- <div class="footerWrap">
+	<div class="footerWrap">
 		<div class="footer">
 			<img src="images/logo02.png" alt="" class="img08">
 			<div class="footerTxt">
@@ -417,6 +431,9 @@
 				</p>
 			</div>
 		</div>
-	</div> -->
+	</div>
+	<div class="top">
+		top
+	</div>
 </body>
 </html>

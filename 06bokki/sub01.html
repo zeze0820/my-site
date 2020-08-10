@@ -34,9 +34,9 @@
 				var liNum = $(this).index();
 				$(".sCon01>img").attr("src",viewImg[liNum]);
 				
-			
 				$(".tabWrap>ul>li").removeClass();
 				$(this).addClass("active");
+
 				if(liNum == 0){
 					$(".subMenu01").html("BRAND 소개")
 				}
@@ -48,6 +48,20 @@
 				}
 				if(liNum == 3){
 					$(".subMenu01").html("정보공개서 신청")
+				}
+				
+
+				if(liNum == 0){
+					$(".subMenu001").html("BRAND 소개")
+				}
+				if(liNum == 1){
+					$(".subMenu001").html("B.I")
+				}
+				if(liNum == 2){
+					$(".subMenu001").html("오시는 길")
+				}
+				if(liNum == 3){
+					$(".subMenu001").html("정보공개서 신청")
 				}
 				return false;
 			});
@@ -111,7 +125,7 @@
 	</header>
 	<div class="sContainer01">
 		<div class="sTitle01">
-			<h3>BRAND소개</h3>
+			<h3 class="subMenu001">BRAND소개</h3>
 		</div>
 		<div class="sCon01">
 			<img src="images/subcon01.jpg" alt="" class="stimg01">

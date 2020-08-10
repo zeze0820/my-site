@@ -25,14 +25,31 @@
 				var liNum = $(this).index();
 				$(".sCon05>img").attr("src",viewImg[liNum]);
 				
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("ul>li").click(function(){
-				$("ul>li").removeClass();
+				$(".tabWrap01>ul>li").removeClass();
 				$(this).addClass("active");
+
+
+				if(liNum == 0){
+					$(".subMenu05").html("공지사항")
+				}
+				if(liNum == 1){
+					$(".subMenu05").html("고객게시판")
+				}
+				if(liNum == 2){
+					$(".subMenu05").html("추천점포")
+				}
+				
+
+				if(liNum == 0){
+					$(".subMenu005").html("공지사항")
+				}
+				if(liNum == 1){
+					$(".subMenu005").html("고객게시판")
+				}
+				if(liNum == 2){
+					$(".subMenu005").html("추천점포")
+				}
+				return false;
 			});
 		});
 	</script>
@@ -75,7 +92,7 @@
 						<li><img src="images/icon10.png" alt=""></li>
 						<li><p>COMMUNITY</p></li>
 						<li><img src="images/icon10.png" alt=""></li>
-						<li><p>공지사항</p></li>
+						<li><p class="subMenu05">공지사항</p></li>
 					</ul>
 				</div>
 			</div>
@@ -83,7 +100,7 @@
 	</header>
 	<div class="sContainer05">
 		<div class="sTitle05">
-			<h3>공지사항</h3>
+			<h3 class="subMenu005">공지사항</h3>
 		</div>
 		<div class="sCon05">
 			<img src="images/subcon18.jpg" alt="" class="stimg05">
