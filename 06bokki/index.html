@@ -108,64 +108,80 @@
 				});
 		});
 	</script>
+	<script>
+		$(document).ready(function(){
+			$(".toggleMenu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+					$(".myTopMenu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".myTopMenu").stop().animate({left:"-100%"},300);
+				}
+			});
+		});
+		$(window)
+	</script>
 </head>
 <body>
 	<header id="header" class="main">
 		<div id="header_top" class="clearfix">
 			<a href="index.html"><img src="images/logo01.png" alt=""></a>
-			<nav id="main_menu">
-				<ul class="clearfix">
-					<li>
-						<a href="sub01.html">BRAND</a>
-						<ul class="smenu">
-							<li><a href="sub01.html">BRAND 소개</a></li>
-							<li><a href="sub01.html">B.I</a></li>
-							<li><a href="sub01.html">오시는 길</a></li>
-							<li><a href="sub01.html">정보공개서 신청</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="sub02.html">MENU</a>
-						<ul class="smenu">
-							<li><a href="sub02.html">떡볶이 메뉴</a></li>
-							<li><a href="sub02.html">튀김 메뉴</a></li>
-							<li><a href="sub02.html">음료 메뉴</a></li>
-							<li><a href="sub02.html">친구 메뉴</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="sub03.html">FRANCHISE</a>
-						<ul class="smenu">
-							<li><a href="sub03.html">신참의 경쟁력</a></li>
-							<li><a href="sub03.html">가맹 개설 절차</a></li>
-							<li><a href="sub03.html">창업특전</a></li>
-							<li><a href="sub03.html">가맹문의</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="sub04.html">STORE</a>
-						<ul class="smenu">
-							<li><a href="sub04.html">국내 매장 찾기</a></li>
-							<li><a href="sub04.html">국외 매장 찾기</a></li>
-							<li><a href="sub04.html">인테리어</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="sub05.html">COMMUNITY</a>
-						<ul class="smenu">
-							<li><a href="sub05.html">커뮤니티</a></li>
-							<li><a href="sub05.html">고객게시판</a></li>
-							<li><a href="sub05.html">점주 공간</a></li>
-							<li><a href="sub05.html">추천점포</a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="menubar"></div>
-			</nav>
-			<div class="toggleMenu">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
+			<div class="myTopMenu">
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li>
+							<a href="sub01.html">BRAND</a>
+							<ul class="smenu">
+								<li><a href="sub01.html">BRAND 소개</a></li>
+								<li><a href="sub01.html">B.I</a></li>
+								<li><a href="sub01.html">오시는 길</a></li>
+								<li><a href="sub01.html">정보공개서 신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub02.html">MENU</a>
+							<ul class="smenu">
+								<li><a href="sub02.html">떡볶이 메뉴</a></li>
+								<li><a href="sub02.html">튀김 메뉴</a></li>
+								<li><a href="sub02.html">음료 메뉴</a></li>
+								<li><a href="sub02.html">친구 메뉴</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub03.html">FRANCHISE</a>
+							<ul class="smenu">
+								<li><a href="sub03.html">신참의 경쟁력</a></li>
+								<li><a href="sub03.html">가맹 개설 절차</a></li>
+								<li><a href="sub03.html">창업특전</a></li>
+								<li><a href="sub03.html">가맹문의</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub04.html">STORE</a>
+							<ul class="smenu">
+								<li><a href="sub04.html">국내 매장 찾기</a></li>
+								<li><a href="sub04.html">국외 매장 찾기</a></li>
+								<li><a href="sub04.html">인테리어</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub05.html">COMMUNITY</a>
+							<ul class="smenu">
+								<li><a href="sub05.html">커뮤니티</a></li>
+								<li><a href="sub05.html">고객게시판</a></li>
+								<li><a href="sub05.html">점주 공간</a></li>
+								<li><a href="sub05.html">추천점포</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="toggleMenu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
 			</div>
 		</div>
 		
@@ -316,49 +332,49 @@
 		<h1 class="jalnan">SNS</h1>
 		<div class="slickWrap">
 			<div class="slick">
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/EuHT3yItSRY" target="_blank">
 						<img src="images/video01.jpg" alt="">
 						<p>#치즈가득<br>#달고마떡볶이<br>#참치마요컵밥에 튀김까지!</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/kRQbufDthh4" target="_blank">
 						<img src="images/video02.jpg" alt="">
 						<p>#맵찔이도 맛있게!<br>#튀김, 어묵<br>#컵밥 4종 리뷰!</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/E_aPCBTWuSQ" target="_blank">
 						<img src="images/video03.jpg" alt="">
 						<p>#바삭바삭 새우튀김<br>#리얼사운드<br>#ASMR</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/cuAvnMsE8xY" target="_blank">
 						<img src="images/video04.jpg" alt="">
 						<p>#분식파티(feat.떡튀순오)<br>#치즈폭탄<br>#멍멍이랑 함께 하는 먹방</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/EuHT3yItSRY" target="_blank">
 						<img src="images/video01.jpg" alt="">
 						<p>#치즈가득<br>#달고마떡볶이<br>#참치마요컵밥에 튀김까지!</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/kRQbufDthh4" target="_blank">
 						<img src="images/video02.jpg" alt="">
 						<p>#맵찔이도 맛있게!<br>#튀김, 어묵<br>#컵밥 4종 리뷰!</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/E_aPCBTWuSQ" target="_blank">
 						<img src="images/video03.jpg" alt="">
 						<p>#바삭바삭 새우튀김<br>#리얼사운드<br>#ASMR</p>
 					</a>
 				</div>
-				<div class="simg01 jalnan20">
+				<div class="simg01">
 					<a href="https://youtu.be/cuAvnMsE8xY" target="_blank">
 						<img src="images/video04.jpg" alt="">
 						<p>#분식파티(feat.떡튀순오)<br>#치즈폭탄<br>#멍멍이랑 함께 하는 먹방</p>
