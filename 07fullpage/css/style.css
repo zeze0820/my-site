@@ -25,8 +25,8 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 #page1{background-image: url(../images/banner01.jpg);}
 #page2{background-image: url(../images/live_bg.jpg);}
 #page3{background-image: url(../images/rec_bg.jpg);}
-#page4{background-image: url(../images/Class_bg.jpg);}
-#page5{background-image: url(../images/banner01.jpg);}
+#page4{background-image: url(../images/class_bg.jpg);}
+#page5{background-image: url(../images/ser_bg.jpg);}
 #page6{background-image: url(../images/banner01.jpg);}
 
 .section{background-repeat: no-repeat;background-position: center;
@@ -112,3 +112,11 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 	margin:0 auto;font-size:23px;right:0;color:#ed6d00;}
 .main a.m02:hover{background-color: #ed6d00;color:#fff;}
 
+/*footer*/
+.footer{width: 100%;padding:60px;}
+.footer img{margin-bottom: 30px;}
+.footerTxt{}
+.footerTxt>ul{margin-bottom:10px;}
+.footerTxt>ul>li{float:left;}
+.footerTxt>ul>li>a{color:#ccc;margin-right:30px;}
+.footerTxt>p{color:#ccc;font-size:14px;line-height:19px;}
