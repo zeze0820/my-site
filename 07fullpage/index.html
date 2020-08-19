@@ -3,21 +3,139 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>문서 제목</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>flexcuc</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.bxslider.js"></script>
-	<script src="js/jquery.colorbox-min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(function(){
+			$("#fullpage").fullpage({
+				anchors:["a1st","a2st","a3st","a4st","a5st","a6st"],
+				menu:"#topMenu",
+				navigation:true,
+				afterLoad:function(anchorsLink,index){
+					console.log(anchorsLink+", "+index);
+					if(index == 1){
+						$("#onViewOne").addClass("move");
+					}else{
+						$("#onViewOne").removeClass("move");
+					}
+
+					if(index == 2){
+						$("#onViewTwo").addClass("move");
+					}else{
+						$("#onViewTwo").removeClass("move");
+					}
+
+					if(index == 3){
+						$("#onViewThree").addClass("move");
+					}else{
+						$("#onViewThree").removeClass("move");
+					}
+
+					if(index == 4){
+						$("#onViewFour").addClass("move");
+					}else{
+						$("#onViewFour").removeClass("move");
+					}
+
+					if(index == 5){
+						$("#onViewFive").addClass("move");
+					}else{
+						$("#onViewFive").removeClass("move");
+					}
+
+					if(index == 6){
+						$("#onViewSix").addClass("move");
+					}else{
+						$("#onViewSix").removeClass("move");
+					}
+				}
+			});
+		});
+	</script>
 </head>
 <body>
-	
+	<header id="header">
+		<h2><a href="#"><img src="images/logo.png" alt=""></a></h2>
+		<nav class="gnb">
+			<ul id="topMenu" class="clearfix">
+				<li data-menuanchor="a1st"><a href="#a1st">FLexCuc™</a></li>
+				<li data-menuanchor="a2st"><a href="#a2st">LIVE</a></li>
+				<li data-menuanchor="a3st"><a href="#a3st">Recipe</a></li>
+				<li data-menuanchor="a4st"><a href="#a4st">Class</a></li>
+				<li data-menuanchor="a5st"><a href="#a5st">Service</a></li>
+				<li data-menuanchor="a6st"><a href="#a6st">Event</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="fullpage">
+		<div class="section" id="page1" data-anchor="a1st">
+			<video id="video" autoplay muted data-autolay loop>
+				<source src="video/video01.mp4" type="video/mp4">
+			</video>
+			<div class="main" id="onViewOne">
+				<a href="#">more</a>
+			</div>
+			<div class="scroll">
+				<a href="#a2st"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page2" data-anchor="a2st">
+			<div class="main" id="onViewTwo">
+				<!-- <h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a> -->
+			</div>
+			<div class="scroll">
+				<a href="#a3st"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page3" data-anchor="a3st">
+			<div class="main" id="onViewThree">
+				<!-- <h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a> -->
+			</div>
+			<div class="scroll">
+				<a href="#a4st"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page4" data-anchor="a4st">
+			<div class="main" id="onViewFour">
+				<!-- <h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a> -->
+			</div>
+			<div class="scroll">
+				<a href="#a5st"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page5" data-anchor="a5st">
+			<div class="main" id="onViewFive">
+				<!-- <h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a> -->
+			</div>
+			<div class="scroll">
+				<a href="a6st"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page6" data-anchor="a6st">
+			<div class="main" id="onViewSix">
+				<!-- <h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a> -->
+			</div>
+			<div class="scroll">
+				<a href="#"><img src="btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
