@@ -54,7 +54,7 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 #onViewFour{top:10%;transition:0.3s;opacity:0;}
 #onViewFour.move{top:35%;opacity:1;}
 
-/*슬라이드*/
+/*슬라이드1*/
 .slickWrap{width: 1300px;margin: 0 auto;}
 .slick div.simg01{
 	font-size: 20px;font-weight:500;
@@ -67,13 +67,14 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 .slick div.simg01:last-child{margin-right:0;}
 .slick div.simg01 p{padding:30px;}
 .slick div.simg01 h6{
-	padding-right:30px;padding-left:30px;padding-bottom:20px;text-align:right;}
+	padding-right:30px;padding-left:30px;padding-bottom:20px;
+	text-align:right;}
 .slick div.simg01:hover h6{color:#ed6d00;}
 
-
+/*슬라이드2*/
 .slickWrap01{width: 1300px;margin: 0 auto;}
 .slick01 div.simg02{
-	font-size: 20px;font-weight:500;
+	font-size: 20px;font-weight:500;overflow:hidden;
 	width: 700px;height: 320px;background: #fff;cursor:pointer;
 	margin-right: 15px;margin-left: 15px;padding:15px;}
 .slick01 div.simg02 img{width: 100%;}
@@ -81,6 +82,11 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 		box-shadow: 0 0 20px #131313;
 		}
 .slick01 div.simg02:last-child{margin-right:0;}}
+
+.simg02:hover{}
+.simg02 img{transform: scale(1.0);transition:0.3s;}
+.simg02:hover img{transform: scale(1.2);}
+.rImg{overflow:hidden;}
 
 .slick-dots {
     position: absolute;
@@ -112,6 +118,8 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 	margin:0 auto;font-size:23px;right:0;color:#ed6d00;}
 .main a.m02:hover{background-color: #ed6d00;color:#fff;}
 
+
+
 /*footer*/
 .footer{width: 100%;padding:60px;}
 .footer img{margin-bottom: 30px;}
@@ -120,3 +128,9 @@ nav.gnb>ul>li.active a{color:#ed6d00;}
 .footerTxt>ul>li{float:left;}
 .footerTxt>ul>li>a{color:#ccc;margin-right:30px;}
 .footerTxt>p{color:#ccc;font-size:14px;line-height:19px;}
+
+.footer00{float:left;}
+.footer01{float:right;}
+.footer01 h2{color:#ccc;}
+.footer01 h1{color:#ed6d00;}
+.footer01 p{color:#ccc;}
