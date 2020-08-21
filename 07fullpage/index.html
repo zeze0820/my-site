@@ -6,6 +6,7 @@
 	<title>flexcuc</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
@@ -13,8 +14,17 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(function(){
+			// $(".fullpage_bbs,.fullpage_bbs1").colorbox({
+			// 	iframe:true,
+			// 	// innerWidth:800,
+			// 	// innerHeight:400,
+			// 	widht:"80%",
+			// 	height:"50%"
+			// }); // 풀페이지 팝업창 - 게시판, 갤러리 적용
+
 			$("#fullpage").fullpage({
 				anchors:["a1st","a2st","a3st","a4st","a5st","a6st"],
 				menu:"#topMenu",
@@ -98,6 +108,22 @@
 					}
 				}]
 			});
+
+			// $(".gnb>ul#topMenu").mouseover(function(){
+			// 	$(this).find("ul.smenu").stop().slideDown(300);
+				
+			// });
+			// $(".gnb>ul#topMenu").mouseout(function(){
+			// 	$(this).find("ul.smenu").stop().slideUp(300);
+			// });
+
+			$(".gnb>ul#topMenu").mouseover(function(){
+				$("#header .sub_bg,#header ul.smenu").stop().slideDown(300);
+			});
+
+			$(".gnb>ul#topMenu").mouseout(function(){
+				$("#header .sub_bg,#header ul.smenu").stop().slideUp(300);
+			});
 		});
 	</script>
 </head>
@@ -106,14 +132,51 @@
 		<h2><a href="#"><img src="images/logo.png" alt=""></a></h2>
 		<nav class="gnb">
 			<ul id="topMenu" class="clearfix">
-				<li data-menuanchor="a1st"><a href="#a1st">FLexCuc™</a></li>
-				<li data-menuanchor="a2st"><a href="#a2st">LIVE</a></li>
-				<li data-menuanchor="a3st"><a href="#a3st">Recipe</a></li>
-				<li data-menuanchor="a4st"><a href="#a4st">Class</a></li>
-				<li data-menuanchor="a5st"><a href="#a5st">Service</a></li>
-				<li data-menuanchor="a6st"><a href="#a6st">Event</a></li>
+				<li data-menuanchor="a1st">
+					<a href="#a1st">FLexCuc™</a>
+					<ul class="smenu">
+						<li><a href="#">Story</a></li>
+						<li><a href="#">News</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="a2st">
+					<a href="#a2st">LIVE</a>
+					<ul class="smenu">
+						<li><a href="#">Story</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="a3st">
+					<a href="#a3st">Recipe</a>
+					<ul class="smenu">
+						<li><a href="#">Look Book</a></li>
+						<li><a href="#">Signature</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="a4st">
+					<a href="#a4st">Class</a>
+					<ul class="smenu">
+						<li><a href="#">Class</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="a5st">
+					<a href="#a5st">Service</a>
+					<ul class="smenu">
+						<li><a href="#">Manual</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">AS</a></li>
+						<li><a href="#">Notice</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="a6st">
+					<a href="#a6st">Event</a>
+					<ul class="smenu">
+						<li><a href="#">Event</a></li>
+					</ul>
+				</li>
 			</ul>
+			
 		</nav>
+		<div class="sub_bg"></div>
 	</header>
 	<div id="fullpage">
 		<div class="section" id="page1" data-anchor="a1st">
@@ -125,9 +188,15 @@
 온도를 정밀하게 제어하는 인덕션 히팅(IH)기술이 융합된
 신개념 올인원 조리가전입니다."</h1>
 				<a href="#">more</a>
+
+				<!-- <a href="http://zeze0820.dothome.co.kr/main/bbs/board.php?bo_table=fullpage_bbs01" class="fullpage_bbs">More01</a>
+
+				<a href="http://zeze0820.dothome.co.kr/main/bbs/board.php?bo_table=fullpage_gal_bbs01" class="fullpage_bbs1">More02</a> -->
+
 			</div>
 			<div class="scroll">
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+
 			</div>
 		</div>
 
@@ -316,6 +385,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<!-- <div class="scroll">
 				<a href="#"><img src="images/btn_scroll.png" alt=""></a>
 			</div> -->

@@ -24,7 +24,7 @@
 
 #main_menu{width: 1000px;margin:auto;}
 
-#main_menu ul.smenu{display:none;background-color: rgb(0,0,8,70%);}
+#main_menu ul.smenu{_display:none;background-color: rgb(0,0,8,70%);}
 #main_menu ul.smenu{position: absolute;width: 100%;z-index:2;} /*메인메뉴와 서브메뉴 분리*/
 /*#menu>ul>li:first-child .sub{display:block;}*/
 #main_menu ul.smenu>li{width: 100%;}
