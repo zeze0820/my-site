@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>sub03</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sub05</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/colorbox.css">
@@ -17,30 +17,44 @@
 	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		var viewImg = [
-			"images/sCon04-1.jpg",
-			"images/sCon04-2.jpg"
+			"images/sCon06-1.jpg",
+			"images/sCon06-2.jpg",
+			"images/sCon06-3.jpg",
+			"images/sCon06-4.jpg"
 			];
 
 		$(function(){
-			$(".tabWrap03>ul>li").click(function(){
+			$(".tabWrap05>ul>li").click(function(){
 				var liNum = $(this).index();
-				$(".sCon03>img").attr("src",viewImg[liNum]);
+				$(".sCon05>img").attr("src",viewImg[liNum]);
 				
-				$(".tabWrap03>ul>li").removeClass();
+				$(".tabWrap05>ul>li").removeClass();
 				$(this).addClass("active");
 
 				if(liNum == 0){
-					$(".subMenu01").html("Look Book")
+					$(".subMenu01").html("Manual")
 				}
 				if(liNum == 1){
-					$(".subMenu01").html("Signature")
+					$(".subMenu01").html("FAQ")
+				}
+				if(liNum == 2){
+					$(".subMenu01").html("AS")
+				}
+				if(liNum == 3){
+					$(".subMenu01").html("Notice")
 				}
 
 				if(liNum == 0){
-					$(".subMenu001").html("Look Book")
+					$(".subMenu001").html("Manual")
 				}
 				if(liNum == 1){
-					$(".subMenu001").html("Signature")
+					$(".subMenu001").html("FAQ")
+				}
+				if(liNum == 2){
+					$(".subMenu001").html("AS")
+				}
+				if(liNum == 3){
+					$(".subMenu001").html("Notice")
 				}
 				return false;
 			});
@@ -107,29 +121,31 @@
 		</nav>
 		<div class="sub_bg"></div>
 	</header>
-	<div class="headerImg03" style="background-image: url(images/rec_bg01.jpg)">
-		<h2 class="subMenu001">Look Book</h2>
+	<div class="headerImg05" style="background-image: url(images/ser_bg01.jpg)">
+		<h2 class="subMenu001">Manual</h2>
 	</div>
-	<div class="conWrap03">
-		<div class="container03">
-			<div class="location03">
+	<div class="conWrap05">
+		<div class="container05">
+			<div class="location05">
 				<ul class="clearfix">
 					<li><p>Home</p></li>
 					<li><img src="images/loc_btn.png" alt=""></li>
-					<li><p>Recipe</p></li>
+					<li><p>Service</p></li>
 					<li><img src="images/loc_btn.png" alt=""></li>
-					<li><p class="subMenu01">Look Book</p></li>
+					<li><p class="subMenu01">Manual</p></li>
 				</ul>
 			</div>
 		</div>
-		<div class="tabWrap03">
+		<div class="tabWrap05">
 			<ul class="clearfix">
-				<li class="active"><a href="#">Look Book</a></li>
-				<li><a href="#">Signature</a></li>
+				<li class="active"><a href="#">Manual</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">AS</a></li>
+				<li><a href="#">Notice</a></li>
 			</ul>
 		</div>
-		<div class="sCon03">
-			<img src="images/sCon04-1.jpg" alt="" class="stimg03">
+		<div class="sCon05">
+			<img src="images/sCon06-1.jpg" alt="" class="stimg05">
 		</div>
 	</div>
 	<div class="section fp-auto-height" data-anchor="a7st">
