@@ -97,7 +97,7 @@
 					breakpoint:960,
 					settings:{
 						arrows:false,
-						slidesToShow:2
+						slidesToShow:3
 					}
 				},
 				{
@@ -109,20 +109,23 @@
 				}]
 			});
 
-			// $(".gnb>ul#topMenu").mouseover(function(){
-			// 	$(this).find("ul.smenu").stop().slideDown(300);
-				
-			// });
-			// $(".gnb>ul#topMenu").mouseout(function(){
-			// 	$(this).find("ul.smenu").stop().slideUp(300);
-			// });
-
 			$("nav ul li,#header .sub_bg").mouseover(function(){
 				$("#header .sub_bg,#header ul.smenu").stop().slideDown(300);
 			});
 
 			$("nav ul li,#header .sub_bg").mouseout(function(){
 				$("#header .sub_bg,#header ul.smenu").stop().slideUp(300);
+			});
+
+			$(".toggleMenu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+					$(".myTopMenu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".myTopMenu").stop().animate({left:"-100%"},300);
+				}
 			});
 		});
 	</script>
@@ -177,11 +180,11 @@
 			
 		</nav>
 		<div class="sub_bg"></div>
-		<!-- <div class="toggleMenu">
+		<div class="toggleMenu">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
-		</div> -->
+		</div>
 	</header>
 	<div id="fullpage">
 		<div class="section" id="page1" data-anchor="a1st">
