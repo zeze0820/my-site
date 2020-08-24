@@ -2,10 +2,10 @@
 
 /*header*/
 #header{width: 100%;height: 80px;background-color: rgba(255,255,255,0.6);
-		position: relative;z-index: 1;position: fixed;}
+		position: relative;z-index: 1;position: fixed;padding:20px 0;}
 #header h2{position: absolute;left:40px;top:20px;}
 nav.gnb{position: absolute;z-index:10;width: 470px;right:0;
-		padding:20px 0;}
+		padding:20px 0;display:none;}
 nav.gnb>ul{}
 nav.gnb>ul>li{
 	float:left;font-weight:500;
