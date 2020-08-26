@@ -20,7 +20,7 @@
 .toggleMenu .bar3{top:31px;}*/
 
 #main_menu>ul>li{
-	float:left;width: 15%;line-height:40px;
+	float:left;width: 14%;line-height:40px;
 	position: relative;}
 #main_menu>ul>li>a{
 	display:block;line-height: 50px;padding:10px 10px;color:white;
@@ -243,7 +243,7 @@ nav#main_menu>ul:hover ~ .menubar{display:block;}*/
 .jalnan{font-family: 'yg-jalnan';}
 .jalnan20{font-family: 'yg-jalnan';font-size: 20px;}
 
-.slickWrap{}
+.slickWrap{width: 90%;margin: 0 auto;}
 .slick div.simg01{
 	font-size: 15px;font-family: 'yg-jalnan';
 	width: 380px;height: 330px;background: #fff;cursor:pointer;

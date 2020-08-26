@@ -5,14 +5,12 @@
 		position: relative;z-index: 1;position: fixed;padding:20px 0;}
 #header h2{position: absolute;left:20px;top:30px;}
 #header h2 img{width: 130px;}
-nav.gnb{position: absolute;z-index:10;width: 470px;right:0;
-		padding:20px 0;display:none;}
+nav.gnb{position: absolute;left:50%;top:20%;
+		transform:translateX(-50%);}
 nav.gnb>ul{}
 nav.gnb>ul>li{
-	float:left;font-weight:500;
-	width: 12%;height: 40px;line-height:40px;position: relative;
-	margin-left:20px;}
-nav.gnb>ul>li>a{display:block;text-align:center;padding-bottom:20px;}
+	text-align: center;color:#fff;}
+nav.gnb>ul>li>a{display:block;text-align:center;line-height:70px;}
 nav.gnb>ul>li:first-child{margin-left:0;}
 nav.gnb>ul>li:hover>a{color:#ed6d00;}
 nav.gnb>ul>li.active{_background: #ed6d00;border-radius:50px;}
@@ -40,7 +38,7 @@ nav.gnb>ul:hover .smenu{display:block;}
 /*toggleMenu*/
 .toggleMenu{
 	float:right;width: 50px;height: 50px;position: relative;
-	cursor:pointer;z-index:1;display:block;}
+	cursor:pointer;z-index:1;}
 .toggleMenu div{
 	width: 35px;height: 5px;background: #ed6d00;position: absolute;
 	border-radius:3px;left:7px;
@@ -55,7 +53,7 @@ nav.gnb>ul:hover .smenu{display:block;}
 .change .bar3{transform: translate(-50%,-50%) rotate(45deg);
 				  top:50%;left:50%;}
 .myTopMenu{position: fixed;width: 100%;height: 1000px;
-		   background: #2b2b2b;top:0;}
+		   background: #2b2b2b;top:0;_display:none;}
 
 /*video*/
 #fullpage{}

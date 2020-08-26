@@ -60,7 +60,7 @@
 
 
 /*bxslider*/
-.slider_wrap{height: 500px;}
+.slider_wrap{width: 90%;margin: 0 auto;}
 .slider_wrap ul li{
 	height: 500px;}
 .slider_wrap li.first{
