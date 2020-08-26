@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>flexcuc</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/colorbox.css">
@@ -79,13 +80,6 @@
 						arrows:false,
 						slidesToShow:2
 					}
-				},
-				{
-					breakpoint:560,
-					settings:{
-						arrows:false,
-						slidesToShow:1
-					}
 				}]
 			});
 
@@ -97,10 +91,9 @@
 					breakpoint:960,
 					settings:{
 						arrows:false,
-						slidesToShow:3
+						slidesToShow:2
 					}
-				},
-				{
+				},{
 					breakpoint:560,
 					settings:{
 						arrows:false,
@@ -133,52 +126,54 @@
 <body>
 	<header id="header">
 		<h2><a href="index.html"><img src="images/logo.png" alt=""></a></h2>
-		<nav class="gnb">
-			<ul id="topMenu" class="clearfix">
-				<li data-menuanchor="a1st">
-					<a href="#a1st">FLexCuc™</a>
-					<ul class="smenu">
-						<li><a href="sub01.html">Story</a></li>
-						<li><a href="sub01.html">News</a></li>
-					</ul>
-				</li>
-				<li data-menuanchor="a2st">
-					<a href="#a2st">LIVE</a>
-					<ul class="smenu">
-						<li><a href="sub02.html">Story</a></li>
-					</ul>
-				</li>
-				<li data-menuanchor="a3st">
-					<a href="#a3st">Recipe</a>
-					<ul class="smenu">
-						<li><a href="sub03.html">Look Book</a></li>
-						<li><a href="sub03.html">Signature</a></li>
-					</ul>
-				</li>
-				<li data-menuanchor="a4st">
-					<a href="#a4st">Class</a>
-					<ul class="smenu">
-						<li><a href="sub04.html">Class</a></li>
-					</ul>
-				</li>
-				<li data-menuanchor="a5st">
-					<a href="#a5st">Service</a>
-					<ul class="smenu">
-						<li><a href="sub05.html">Manual</a></li>
-						<li><a href="sub05.html">FAQ</a></li>
-						<li><a href="sub05.html">AS</a></li>
-						<li><a href="sub05.html">Notice</a></li>
-					</ul>
-				</li>
-				<li data-menuanchor="a6st">
-					<a href="#a6st">Event</a>
-					<ul class="smenu">
-						<li><a href="sub06.html">Event</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-		</nav>
+		<div class="myTopMenu">
+			<nav class="gnb">
+				<ul id="topMenu" class="clearfix">
+					<li data-menuanchor="a1st">
+						<a href="#a1st">FlexCuc™</a>
+						<ul class="smenu">
+							<li><a href="sub01.html">Story</a></li>
+							<li><a href="sub01.html">News</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="a2st">
+						<a href="#a2st">LIVE</a>
+						<ul class="smenu">
+							<li><a href="sub02.html">Story</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="a3st">
+						<a href="#a3st">Recipe</a>
+						<ul class="smenu">
+							<li><a href="sub03.html">Look Book</a></li>
+							<li><a href="sub03.html">Signature</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="a4st">
+						<a href="#a4st">Class</a>
+						<ul class="smenu">
+							<li><a href="sub04.html">Class</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="a5st">
+						<a href="#a5st">Service</a>
+						<ul class="smenu">
+							<li><a href="sub05.html">Manual</a></li>
+							<li><a href="sub05.html">FAQ</a></li>
+							<li><a href="sub05.html">AS</a></li>
+							<li><a href="sub05.html">Notice</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="a6st">
+						<a href="#a6st">Event</a>
+						<ul class="smenu">
+							<li><a href="sub06.html">Event</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</nav>
+		</div>	
 		<div class="sub_bg"></div>
 		<div class="toggleMenu">
 			<div class="bar1"></div>
@@ -322,7 +317,7 @@
 				</div>
 			</div>
 			<div class="scroll">
-				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a4st"><img src="images/btn_scroll03.png" alt=""></a>
 			</div>
 		</div>
 		<div class="section" id="page4" data-anchor="a4st">
@@ -354,6 +349,12 @@
 		</div>
 		<div class="section" id="page6" data-anchor="a6st">
 			<div class="main" id="onViewSix">
+				<div class="e_mobile">
+					<p>FlexCuc와 함께 하는 <span>다양한 혜택과 이벤트</span>를 지금 바로 경혐해보세요!</p>
+					<div class="eBtn">
+						<a href="#" class="e01">Event 참여하기</a>
+					</div>
+				</div>
 				<div class="e_bg">
 					<div class="e_title">
 						<h1><a href="#">EVENT</a></h1>

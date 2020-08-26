@@ -94,10 +94,10 @@ nav.gnb>ul:hover .smenu{display:block;}
 #onViewFive.move{top:35%;opacity:1;}
 
 /*슬라이드1*/
-.slickWrap{width: 1300px;margin: 0 auto;}
+.slickWrap{width: 90%;margin: 0 auto;}
 .slick div.simg01{
 	font-size: 20px;font-weight:500;
-	width: 380px;height: 470px;background: #fff;cursor:pointer;
+	width: 380px;height: 450px;background: #fff;cursor:pointer;
 	margin-right: 20px;margin-left: 20px;border-radius:10px 10px 10px 10px;}
 .slick div.simg01 img{width: 100%;border-radius:10px 10px 0 0}
 .slick div.simg01:hover{
@@ -111,7 +111,7 @@ nav.gnb>ul:hover .smenu{display:block;}
 .slick div.simg01:hover h6{color:#ed6d00;}
 
 /*슬라이드2*/
-.slickWrap01{width: 1300px;margin: 0 auto;}
+.slickWrap01{width:90%;margin: 0 auto;}
 .slick01 div.simg02{
 	font-size: 20px;font-weight:500;overflow:hidden;
 	width: 700px;height: 360px;background: #fff;cursor:pointer;
