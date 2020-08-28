@@ -37,22 +37,7 @@ nav.gnb>ul:hover .smenu{display:block;}
 /*nav.gnb>ul#topMenu:hover ~ .sub_bg{display:block;}*/
 
 /*toggleMenu*/
-/*.toggleMenu{
-	float:right;width: 50px;height: 50px;position: relative;
-	cursor:pointer;z-index:1;display:block;}
-.toggleMenu div{
-	width: 35px;height: 5px;background: #fff;position: absolute;
-	border-radius:3px;left:7px;
-}
-.toggleMenu .bar1{top:11px;}
-.toggleMenu .bar2{top:21px;}
-.toggleMenu .bar3{top:31px;}
-
-.change .bar1{transform: translate(-50%,-50%) rotate(-45deg);
-				  top:50%;left:50%;}
-.change .bar2{opacity:0;}
-.change .bar3{transform: translate(-50%,-50%) rotate(45deg);
-				  top:50%;left:50%;}*/
+.toggleMenu{display:none;}
 
 /*video*/
 #fullpage{}
@@ -176,6 +161,7 @@ nav.gnb>ul:hover .smenu{display:block;}
 .main a.s01:hover{background-color: #fff;color:#000;}
 
 /*Event*/
+.e_mobile{display:none;}
 .e_bg{position: absolute;width: 80%;height: 400px;
 	  background:rgba(255,255,255,0.6);
 	  left:50%;top:50%;transform:translate(-50%,-20%);

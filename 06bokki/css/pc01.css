@@ -6,7 +6,7 @@
 #header_top{width: 1260px;height: 50px;position: absolute;
 			left:50%;transform:translateX(-50%);
 			top:30px;z-index:1;}
-#header_top img{float:left;}
+#header_top a img{float:left;}
 #header_top #main_menu{float:right;}
 #main_menu>ul>li{
 	float:left;width: 20%;line-height:40px;
