@@ -481,6 +481,14 @@ h1, h2, h3, h4, h5, h6 {
   background: #0a98c0;
 }
 
+/*hugtoy section*/
+#hugtoy{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #292d41 url("../img/abouthugtoybg.jpg") center top no-repeat;
+  background-size: cover;}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
