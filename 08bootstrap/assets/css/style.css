@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(152, 40, 30, 0.8);
   transition: 0.4s;
 }
 
@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #8dc2fa;
+  color: #ea5852;
   text-decoration: none;
 }
 
@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #065e77;
+  color: #ea5852;
 }
 
 .mobile-nav-overly {
@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(152, 40, 30, 0.8);
   overflow: hidden;
   display: none;
 }
@@ -414,11 +414,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #fff /*url("../img/main_bg01.jpg") center top no-repeat*/;
+  background: #fff url("../img/campaignbg.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#main h2{color:#ea5852;}
+#main h2{color:#ea5852;font-weight:700;}
 
 @media (max-width: 767px) {
   #main {
@@ -613,7 +613,8 @@ section {
   background-size: cover;
 }
 
-#hugtoy h2{color:#ea5852;}
+#hugtoy h2{color:#ea5852;font-weight:700;}
+#hugtoy p span{color:#ea5852;}
 
 @media (max-width: 767px) {
   #hugtoy {
@@ -676,6 +677,225 @@ section {
 
 #hugtoy .intro-info .btn-get-started:hover, #hugtoy .intro-info .btn-services:hover {
   background: #0a98c0;
+}
+
+/* donate Section
+--------------------------------*/
+#donate {
+  padding: 80px 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #fff url("../img/main_bg03.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#donate .donate-content {
+  padding-top: 200px;
+}
+
+#donate .donate-content h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#donate .donate-content p {
+  color: #fff;
+  font-weight: 400;
+}
+
+#donate h2 span{color:#ea5852;}
+
+#donate .donate-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#donate .donate-content ul li {
+  padding-bottom: 10px;
+}
+
+#donate .donate-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+
+#donate .donate-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#donate .donate-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+#donate .donate-img img:hover {
+  width: 100%;
+  transform: scale(1.03);
+}
+
+#donate .donate-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
+#donate .donate-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
+/* funding Section
+--------------------------------*/
+#funding {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #fff /*url("../img/funding_bg01.jpg") center top no-repeat*/;
+  background-size: cover;
+}
+
+#funding h2{font-weight:700;}
+
+@media (max-width: 767px) {
+  #funding {
+    height: auto;
+    padding: 100px 0 60px 0;
+  }
+  #funding .container {
+    height: auto !important;
+  }
+  #funding .intro-img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  #funding .intro-info {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  #funding .intro-info {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+#funding .intro-info h2 {
+  color: #413e66;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#funding .intro-info h2 span {
+  color: #1bb1dc;
+}
+
+@media (max-width: 767px) {
+  #funding .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+#funding .intro-info .btn-get-started, #funding .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+}
+
+#funding .intro-info .btn-get-started:hover, #funding .intro-info .btn-services:hover {
+  background: #0a98c0;
+}
+
+/*event Section*/
+
+#event{background:url("../img/round_bg.png") center top no-repeat;}
+#event h2{font-weight:700;}
+#event h2 span{color:#ea5852;}
+#event .card h4{color:#ea5852;}
+
+/*momscare section*/
+
+#momscare {
+  padding: 80px 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #fff url("../img/main_bg04.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#momscare .momscare-content {
+  padding-top: 200px;
+}
+
+#momscare h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#momscare h3 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#momscare h2 span{color:#ea5852;}
+
+#momscare .row h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#momscare  p {
+  color: #fff;
+  font-weight: 400;
+}
+
+#momscare h2 span{color:#ea5852;}
+
+#momscare p::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #ea5852;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -20px;
 }
 
 /* Why Us Section
