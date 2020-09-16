@@ -5,48 +5,49 @@
 	li{list-style: none;}
 	.clearfix:after{content:"";display: block;clear:both;}
 
-	/*header*/
-	 div.utilWrap{border-bottom: 1px solid #ccc;}
+/*header*/
+div.utilWrap{border-bottom: 1px solid #ccc;}
 div.util{width: 980px;margin:0 auto;}
 ul.utilMenu{margin-left: auto;width: 268px;}
 ul.utilMenu>li{float:left;position: relative;}
 ul.utilMenu>li:last-child:after{content:"";display: none}
 ul.utilMenu>li:after{content:"";display: block;width: 1px;height: 10px;background-color: #000;
                      position: absolute;top: 10px;right:0;}
-.utilMenu li:last-child a{padding-right: 0;}
+ul.utilMenu li:last-child a{padding-right: 0;}
 ul.utilMenu>li>a{display: block;padding:0 10px;line-height: 30px;}
 
-	div.headerTop{width: 980px;
-		          height: 75px;
-		          margin:0 auto;
-		          position: relative;}
-	div.headerTop>h1.logo{text-align: center;
-	                      line-height: 75px;}
-	div.headerTop>div.toggle{width: 50px;height: 50px;
-		                     border: 1px solid #ddd;
-		                     position: absolute;right:0;top:13px;cursor:pointer;
-		                     }
-	div.headerTop div.box1,
-	div.headerTop div.box2,
-	div.headerTop div.box3
-	{width: 20px;height: 3px;background-color: #666;position: absolute;border-radius:2px}
-	div.headerTop div.box1{top:15px;left:15px;}
-	div.headerTop div.box2{top:23px;left:15px;}
-	div.headerTop div.box3{top:31px;left:15px;}
+div.headerTop{width: 980px;
+          height: 75px;
+          margin:0 auto;
+          position: relative;}
+div.headerTop>h1.logo{text-align: center;
+                  line-height: 75px;}
+div.headerTop>div.toggle{width: 50px;height: 50px;
+                     border: 1px solid #ddd;
+                     position: absolute;right:0;top:13px;cursor:pointer;
+                     }
+div.headerTop div.box1,
+div.headerTop div.box2,
+div.headerTop div.box3
+		{width: 20px;height: 3px;background-color: #666;position: absolute;
+ 		 border-radius:2px}
+div.headerTop div.box1{top:15px;left:15px;}
+div.headerTop div.box2{top:23px;left:15px;}
+div.headerTop div.box3{top:31px;left:15px;}
 
-	div.gnbWrap{background-color: #1d5da4;}
-	div.gnbWrap>nav.gnbMenu{width: 980px;margin:0 auto;}
-	div.gnbWrap>nav.gnbMenu>ul:after{content:"";display: block;clear: both;}
-	div.gnbWrap>nav.gnbMenu>ul>li{float: left;width: 163.3333px;border-right: 1px solid #336dac;}
-	div.gnbWrap>nav.gnbMenu>ul>li>a{color: white;display: block;
-	                                text-align: center;height: 45px;
-	                                line-height: 45px;
-	                                }
-	div.gnbWrap>nav.gnbMenu>ul>li:nth-child(1){border-left: 1px solid #336dac;}                                
-	div.gnbWrap>nav.gnbMenu>ul>li>a:hover{background-color: #233e6f;}
+div.gnbWrap{background-color: #1d5da4;}
+div.gnbWrap>nav.gnbMenu{width: 980px;margin:0 auto;}
+div.gnbWrap>nav.gnbMenu>ul:after{content:"";display: block;clear: both;}
+div.gnbWrap>nav.gnbMenu>ul>li{float: left;width: 163.3333px;border-right: 1px solid #336dac;}
+div.gnbWrap>nav.gnbMenu>ul>li>a{color: white;display: block;
+                            text-align: center;height: 45px;
+                            line-height: 45px;
+                            }
+div.gnbWrap>nav.gnbMenu>ul>li:nth-child(1){border-left: 1px solid #336dac;}                                
+div.gnbWrap>nav.gnbMenu>ul>li>a:hover{background-color: #233e6f;}
 
 /*visualWrap*/
-div.visualWrap{height: 400px;background-color: #233e6f;
+div.visualWrap{height: 400px;background-color: #284273;
                background-image: url(../images/bg02.jpg);
                background-repeat: no-repeat;
                background-position: center;}
