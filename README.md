@@ -4,4 +4,4 @@
 * 03college - https://zeze0820.github.io/my_site/03college
 * 04klass - https://zeze0820.github.io/my_site/04klass
 * 05travel - https://zeze0820.github.io/my_site/05travel
-* 06bboki - https://zeze0820.github.io/my_site/06bboki
+* 06bokki - https://zeze0820.github.io/my_site/06bokki
