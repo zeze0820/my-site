@@ -67,6 +67,17 @@
 			$("nav ul li,#header .sub_bg").mouseout(function(){
 				$("#header .sub_bg,#header ul.smenu").stop().slideUp(300);
 			});
+
+			$(".toggleMenu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+					$(".myTopMenu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".myTopMenu").stop().animate({left:"-100%"},300);
+				}
+			});
 		});
 	</script>
 </head>
